@@ -1,0 +1,23 @@
+* {
+  background-color: rgb(145, 145, 240);
+}
+
+.Navbar-Container {
+  /* border: 1px solid black; */
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+/* Amind-Min-Nav from Component */
+
+.Amind-Min-Nav {
+  font-size: x-large;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(100px, auto);
+  /* border: 1px solid black; */              
+  justify-content: space-between;
+}
