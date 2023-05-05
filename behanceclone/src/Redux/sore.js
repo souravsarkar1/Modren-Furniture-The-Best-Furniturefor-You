@@ -1,15 +1,15 @@
 import { legacy_createStore, applyMiddleware, combineReducers } from "redux";
 import thunk from "redux-thunk";
 import { reducer as authReducer } from "./AuthReducer/reducer";
-
+import { reducer as productReducer } from "./ProductReducer/reducer";
+import { reducer as cartReducer } from "./CartReducer/reducer";
+import { reducer as wishlistReducer } from "./WishlistReducer/reducer";
 
 const rootReducer = combineReducers({
- authReducer
- 
+  authReducer,
+  productReducer,
+  wishlistReducer,
+  cartReducer,
 });
 
 export const store = legacy_createStore(rootReducer, applyMiddleware(thunk));
-
-if (window.Cypress) {
-  window.store = store;
-}
