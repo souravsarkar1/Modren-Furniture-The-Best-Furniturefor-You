@@ -1,19 +1,1191 @@
 {
-  "posts": [
+
+    "data": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "name": "Flex Luxury Straight Line Sofa Set In Leatherette",
+      "price": 18999.0,
+      "mrp": 28999.0,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_3579a2a7-d150-4b70-8386-90ba042f70da_1800x1800.webp?v=1665507800",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_8d7c4bba-280d-4150-a19d-076c15728ab2_1800x1800.webp?v=1665507815",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_3ceae210-4870-4bdd-a1a3-8dbf6e29df8d_1800x1800.webp?v=1665507826"
+      ],
+      "rating": 3.5,
+      "category": "sofa",
+      "description": "The color of this sofa adds a touch of boldness to your decor, creating a neutral palette. The plush velvet material is comfortable and cozy on the skin, and the deep seat cushions provide plenty of room to stretch your legs while bringing a different kind of living experience to your living room and den.",
+      "instack": true
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": 2,
+      "name": "Bobran Modern Sofa Set In Suede",
+      "price": 19999.0,
+      "mrp": 28999.0,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/1-min_da64e53d-7a5c-4800-82cc-ab2e03151b59_5_650x.png?v=1665507435",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/22-min_2cef3387-9e35-4b01-8433-bf4df0befb8c_3_650x.png?v=1665507493",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/0283--min_8_650x.png?v=1665507691"
+      ],
+      "rating": 3.5,
+      "category": "sofa",
+      "description": "The color of this sofa adds a touch of boldness to your decor, creating a neutral palette. The plush velvet material is comfortable and cozy on the skin, and the deep seat cushions provide plenty of room to stretch your legs while bringing a different kind of living experience to your living room and den.",
+      "instack": true
+    },
+    {
+      "id": 3,
+      "name": "Somervilla Sofa Set In Green Color",
+      "price": 15999.0,
+      "mrp": 28999.0,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/1-min_d74a7653-3788-4608-9c87-ab0034c5032f_3_650x.png?v=1665508294",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/111-min_f2fc5cd5-8e48-423d-9b1c-1018a82472c0_8_650x.png?v=1665508344",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/11111-min_7c58ab5d-69c7-4fe2-bbc8-f29eb9b678eb_4_650x.png?v=1665508413"
+      ],
+      "rating": 3.7,
+      "category": "sofa",
+      "description": "This stylish sofa brings a vintage spin to any living area, combining the retro wide and symmetrical forms with up-to-date comfort and materials. Placed on solid wood legs, it features deep seating surface, thick back cushions and broad armrests. Team up with mid-century furniture and accessories for a complete look. ",
+      "instack": false
+    },
+    {
+      "id": 4,
+      "name": "Cosmo Line Chesterfield Sofa Set In Grey",
+      "price": 19999.0,
+      "mrp": 32999.0,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_52d65c95-3e2e-40c5-9799-4c1713584c6a_650x.jpg?v=1665507692",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_de9e56f5-544b-4034-aa4f-b63649d20347_650x.webp?v=1665507642",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_52d65c95-3e2e-40c5-9799-4c1713584c6a_650x.jpg?v=1665507692"
+      ],
+      "rating": 3.6,
+      "category": "sofa",
+      "description": "The color of this sofa adds a touch of boldness to your decor, creating a neutral palette. The plush velvet material is comfortable and cozy on the skin, and the deep seat cushions provide plenty of room to stretch your legs while bringing a different kind of living experience to your living room and den.",
+      "instack": true
+    },
+    {
+      "id": 5,
+      "name": "Western Luxury Modern Suede Sofa Set In Off White",
+      "price": 31999.0,
+      "mrp": 69999.0,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_2337370a-d037-4582-b723-dfe190abdecb_650x.webp?v=1665508424",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_7b7a4fba-f951-46c6-9d65-37e09f2d39c3_650x.webp?v=1665508402",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_2337370a-d037-4582-b723-dfe190abdecb_650x.webp?v=1665508424"
+      ],
+      "rating": 3.5,
+      "category": "sofa",
+      "description": "At Western Luxury, we want you to discover the joy of creating. Starting with your home. We want you to think of the setting up of a space as an energising, creative pursuit. To breathe life into empty rooms with your ideas. To take a few square feet of nothing, and transform it into something beautiful",
+      "instack": true
+    },
+    {
+      "id": 6,
+      "name": "Tesla Straight Line Sofa Set In Grey",
+      "price": 21999.0,
+      "mrp": 28999.0,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_2c945805-0a6a-48e2-8a0d-36f960354278_650x.jpg?v=1665508397",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_ada70d31-01e9-48ab-b197-eeee90a37e16_650x.jpg?v=1665508453",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_362c47c4-3d8a-4b06-be21-840fa42573cc_650x.jpg?v=1665508369"
+      ],
+      "rating": 3.8,
+      "category": "sofa",
+      "description": "This stylish sofa brings a vintage spin to any living area, combining the retro wide and symmetrical forms with up-to-date comfort and materials. Placed on solid wood legs, it features deep seating surface, thick back cushions and broad armrests. Team up with mid-century furniture and accessories for a complete look.",
+      "instack": true
+    },
+    {
+      "id": 7,
+      "name": "Mono Luxury Modern Suede Sofa Sets In Leatherette",
+      "price": 32999.0,
+      "mrp": 100000.0,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_f8104786-849f-428c-8aa0-6c71083307eb_650x.webp?v=1665508011",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_864c5fe6-39d2-4573-9f2a-67be5efcfc31_650x.webp?v=1665508042",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_25d01c12-6bb9-449a-a788-b81513569500_650x.webp?v=1665508270"
+      ],
+      "rating": 3.5,
+      "category": "sofa",
+      "description": "Mono Luxury range of sofa set brings impeccable aesthetics and design value to your interiors. It is made with finest fabric and takes hours of craftsmanship before we ship it to our beloved customers.",
+      "instack": true
+    },
+    {
+      "id": 8,
+      "name": "Rolex Chesterfield Suede Tufted Sofa Set",
+      "price": 19999.0,
+      "mrp": 23999.0,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_08a68f73-353a-463a-9804-e247c0eee85d_50x.webp?v=1665508184",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_2b1def81-ff62-42a3-821d-9ddc7ad0d3f2_650x.webp?v=1665508204",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_4dd640c9-18f8-42ed-a223-962fd41be3d1_650x.webp?v=1665508244"
+      ],
+      "rating": 4.9,
+      "category": "sofa",
+      "description": "From a morning cup of coffee to entertaining guests, this sofa offers you a place to sit back and relax. Our contemporary style sofa is the ideal addition to any living room with its classic design and traditional elements such as deep button tufting and tuxedo arms. Featuring a low backrest and smooth upholstery, this sofa stands as a streamlined statement piece that can change the whole flow of your living room. Finished with beautifully turned legs, our sofa provides an elegant touch to any room.",
+      "instack": false
+    },
+    {
+      "id": 9,
+      "name": "Hana Luxury Modern Velvet Upholstered Curved Sofa",
+      "price": 31999.0,
+      "mrp": 32999.0,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/hana-modern-curved-sofa-20_650x.webp?v=1665507830",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/hana-modern-curved-sofa-10_650x.webp?v=1665507877",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/hana-modern-curved-sofa-21_650x.webp?v=1665508095"
+      ],
+      "rating": 2.5,
+      "category": "sofa",
+      "description": "Hana orange sofa will make a modern and chic showstopper to any home decor. Upholstered in orange velvet, the foam-filled seat and curved back provide great comfort.",
+      "instack": true
+    },
+    {
+      "id": 10,
+      "name": "Jack & Hill Chesterfield Suede Sofa Set",
+      "price": 18999.0,
+      "mrp": 23999.0,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/0-min_2ddcdfd1-5097-4d18-a019-14bcba23c237_650x.png?v=1665507890",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/90-min_1_650x.png?v=1665507933",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/62-min_7_650x.png?v=1665508023"
+      ],
+      "rating": 1.5,
+      "category": "sofa",
+      "description": "The color of this sofa adds a touch of boldness to your decor, creating a neutral palette. The plush velvet material is comfortable and cozy on the skin, and the deep seat cushions provide plenty of room to stretch your legs while bringing a different kind of living experience to your living room and den",
+      "instack": true
+    },
+    {
+      "id": 11,
+      "name": "Cosco Luxury Modern Suede Sofa Set",
+      "price": 19999.0,
+      "mrp": 49999.0,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_eed7470d-8fbc-47cb-95ff-ee9f7b90cc03_650x.webp?v=1665765518",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_e8188acd-4fd1-462c-8c0b-1761ea542e18_650x.webp?v=1665765509",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_31d77c5a-29a8-44fe-b88f-9950a368772e_650x.webp?v=1665765555"
+      ],
+      "rating": 4.5,
+      "category": "sofa",
+      "description": "The color of this sofa adds a touch of boldness to your decor, creating a neutral palette. The plush velvet material is comfortable and cozy on the skin, and the deep seat cushions provide plenty of room to stretch your legs while bringing a different kind of living experience to your living room and den.",
+      "instack": true
+    },
+    {
+      "id": 12,
+      "name": "Proline Sofa Set With SS Legs",
+      "price": 21999.0,
+      "mrp": 28999.0,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_91fdbe77-a245-461f-9d82-da4fe13fc237_650x.jpg?v=1665508098",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_f3d42f20-c988-4985-894c-825e8a242348_650x.jpg?v=1665508173",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_fff48cfb-b135-46be-9038-887aa4184292_650x.webp?v=1665508211"
+      ],
+      "rating": 2.5,
+      "category": "sofa",
+      "description": "This stylish sofa brings a vintage spin to any living area, combining the retro wide and symmetrical forms with up-to-date comfort and materials. Placed on solid wood legs, it features deep seating surface, thick back cushions and broad armrests. Team up with mid-century furniture and accessories for a complete look",
+      "instack": true
+    },
+    {
+      "id": 13,
+      "name": "Romeo Chesterfield Sofa Set",
+      "price": 16999.0,
+      "mrp": 23999.0,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/1-min_de407c8b-81e1-4921-a241-61371c652445_0_650x.png?v=1665508146",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/83-min_17c01dca-7b80-4110-aca5-d648944237a6_2_650x.png?v=1665508186",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/2-min_a9f61dea-f1e7-4e5e-9fab-067b993f022c_1_650x.png?v=1665508264"
+      ],
+      "rating": 3.5,
+      "category": "sofa",
+      "description": "The color of this sofa adds a touch of boldness to your decor, creating a neutral palette. The plush velvet material is comfortable and cozy on the skin, and the deep seat cushions provide plenty of room to stretch your legs while bringing a different kind of living experience to your living room and den.",
+      "instack": true
+    },
+    {
+      "id": 14,
+      "name": "Dexter Modern Straight Line Chesterfield Sofa Set In Leatherette",
+      "price": 21999.0,
+      "mrp": 23999.0,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_c709e106-f74d-424c-b3a6-c0ccc47784df_650x.jpg?v=1674323981",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_8ece51aa-4ba5-481e-aa94-1e11d5021d59_650x.jpg?v=1674324020",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_a71dc216-7600-4945-b062-ebe42543199f_650x.jpg?v=1674324034"
+      ],
+      "rating": 3.5,
+      "category": "sofa",
+      "description": "The color of this sofa adds a touch of boldness to your decor, creating a neutral palette. The plush velvet material is comfortable and cozy on the skin, and the deep seat cushions provide plenty of room to stretch your legs while bringing a different kind of living experience to your living room and den.",
+      "instack": true
+    },
+    {
+      "id": 15,
+      "name": "Blockbox Modern Suede Sofa Sets",
+      "price": 19999.0,
+      "mrp": 28999.0,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_1bc427a4-418e-47c4-b4fc-e639e92b9327_650x.webp?v=1665507405",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_bc09de97-b04e-489d-aa65-88cc7a9688f2_650x.webp?v=1665507432",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_1b9868f8-da97-42b7-abdf-886c5bac688f_650x.webp?v=1665507539"
+      ],
+      "rating": 3.5,
+      "category": "sofa",
+      "description": "The color of this sofa adds a touch of boldness to your decor, creating a neutral palette. The plush velvet material is comfortable and cozy on the skin, and the deep seat cushions provide plenty of room to stretch your legs while bringing a different kind of living experience to your living room and den.",
+      "instack": true
+    },
+    {
+      "id": 16,
+      "name": "Alexa Preimum Modern Sofa Set In Grey Suede",
+      "price": 32999.0,
+      "mrp": 72999.0,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_f65a52f9-8e26-4035-ba6b-b27a9eb6942c_650x.jpg?v=1674324586",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_e819acde-f36f-4e70-bb6f-0dc371bcc7e8_650x.jpg?v=1674324603",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_dbfd5165-d276-4fbd-938e-8b515a65800e_650x.jpg?v=1674324629"
+      ],
+      "rating": 3.5,
+      "category": "sofa",
+      "description": "The color of this sofa adds a touch of boldness to your decor, creating a neutral palette. The plush velvet material is comfortable and cozy on the skin, and the deep seat cushions provide plenty of room to stretch your legs while bringing a different kind of living experience to your living room and den.",
+      "instack": true
+    },
+    {
+      "id": 17,
+      "name": "Craftmen Modern Sofa Set In Suede Fabric",
+      "price": 13999.0,
+      "mrp": 28999.0,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/1-min_cf5eed33-d5fd-4665-b946-18773a425ab8_9_650x.png?v=1665507571",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/232-min_eda9720d-b733-4085-ad7f-ed09b7a19cf2_0_650x.png?v=1665507632",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/942-min_2_650x.png?v=1665507775"
+      ],
+      "rating": 3.5,
+      "category": "sofa",
+      "description": "This stylish sofa brings a vintage spin to any living area, combining the retro wide and symmetrical forms with up-to-date comfort and materials. Placed on solid wood legs, it features deep seating surface, thick back cushions and broad armrests. Team up with mid-century furniture and accessories for a complete look..",
+      "instack": true
+    },
+    {
+      "id": 18,
+      "name": "Angel Wings Luxury Modern Suede Sofa Set",
+      "price": 36999,
+      "mrp": 69999,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_2ace003f-0c9f-4c0a-921e-3f0775cd24fb_1800x1800.webp?v=1665507356",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_aa5b3ed0-b04a-4232-b290-df8a92e42d6e_1800x1800.webp?v=1665507358",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_7024616a-8e56-4c53-82d6-557f878a962a_1800x1800.webp?v=1665507363"
+      ],
+      "rating": 4,
+      "category": "sofa",
+      "description": "At Western Luxury, we want you to discover the joy of creating. Starting with your home. We want you to think of the setting up of a space as an energising, creative pursuit. To breathe life into empty rooms with your ideas. To take a few square feet of nothing, and transform it into something beautiful.",
+      "instack": true
+    },
+    {
+      "id": 19,
+      "name": "Donald Luxury Modern Suede Sofa Set In Grey (Living Room Combo)",
+      "price": 169999,
+      "mrp": 169999,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_97bfd1b9-0116-455e-a830-da696bea3cbe_1800x1800.webp?v=1665507701",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_b65bac77-ef5a-48a9-b6ca-7317a65ea045_1800x1800.webp?v=1665507719",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_fba8f0d4-cb1c-498b-bae2-5189e75a3511_1800x1800.webp?v=1665507731"
+      ],
+      "rating": 5,
+      "category": "sofa",
+      "description": "At Donald Luxury, we want you to discover the joy of creating. Starting with your home. We want you to think of the setting up of a space as an energising, creative pursuit. To breathe life into empty rooms with your ideas. To take a few square feet of nothing, and transform it into something beautiful.",
+      "instack": true
+    },
+    {
+      "id": 20,
+      "name": "Alexa Preimum Modern Sofa Set In Grey Suede",
+      "price": 24549,
+      "mrp": 28549,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_f65a52f9-8e26-4035-ba6b-b27a9eb6942c_1800x1800.jpg?v=1674324586",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_169f090b-3084-4676-9114-09744a08c59e_1800x1800.jpg?v=1674324615",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_2577a9f6-d090-48ee-94ef-d96b156fa2a2_1800x1800.jpg?v=1674324594"
+      ],
+      "rating": 4.2,
+      "category": "sofa",
+      "description": "The color of this sofa adds a touch of boldness to your decor, creating a neutral palette. The plush velvet material is comfortable and cozy on the skin, and the deep seat cushions provide plenty of room to stretch your legs while bringing a different kind of living experience to your living room and den.  ",
+      "instack": true
+    },
+    {
+      "id": 21,
+      "name": "Quilt Plus Upholstered Bed With Storage In Brown Finish",
+      "price": 23999,
+      "mrp": 29999,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/comet-king-size-bed-with-box-storage-in-exotic-teak-finish-by-a-globia-creations-comet-king-size-bed-maz6wd-min_3_1800x1800.png?v=1661584916",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/comet-king-size-bed-with-box-storage-in-exotic-teak-finish-by-a-globia-creations-comet-king-size-bed-nt8hyp-min_6_650x.png?v=1661584924",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/comet-king-size-bed-with-box-storage-in-exotic-teak-finish-by-a-globia-creations-comet-king-size-bed-n9x9fg-min_2_1800x1800.png?v=1661584944"
+      ],
+      "rating": 4,
+      "category": "bed-with-storage",
+      "description": "Nice Maple offers the best in comfort with elan. The collections are a series of modern trendy designs, simple yet striking and represent the ideals of minimalism. The designs are a perfect blend of functionality and exceptional aesthetics. Each piece is crafted with passion and follows international standards on quality and style.",
+      "instack": true
+    },
+    {
+      "id": 22,
+      "name": "Denver Wooden Bed With Storage In Brown Glossy Finish",
+      "price": 18999,
+      "mrp": 39999,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/1-min_aeec5370-c93d-41e5-93fe-46d4af31314a_1800x1800.png?v=1652949701",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/1407530598_1024x1024_c4f83a1b-846f-4f57-87d8-aa78fd7e7633-min_1800x1800.jpg?v=1652949702",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/1407532749_1024x1024_1a4d184b-d172-4495-b771-8e3e65b3f84d-min_1800x1800.png?v=1652949706"
+      ],
+      "rating": 5,
+      "category": "bed-with-storage",
+      "description": "Denver is our premium homegrown label that's part classic, part contemporary. A delectable amalgamation of the timeless and trendy, a precarious balance of function and flair. Nice Maple is a harmonious fit for all tastes, styles and spaces.",
+      "instack": true
+    },
+    {
+      "id": 23,
+      "name": "Art Living Upholstered Bed With Storage In Brown Finish",
+      "price": 22999,
+      "mrp": 29999,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/arctic-queen-size-bed-with-storage-in-choco-walnut-finish-by-a-globia-creations-arctic-queen-size-be-0ciass-min_2_1800x1800.png?v=1653032403",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/arctic-queen-size-bed-with-storage-in-choco-walnut-finish-by-a-globia-creations-arctic-queen-size-be-6u3uup-min_7_1800x1800.png?v=1653032403",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/arctic-queen-size-bed-with-storage-in-choco-walnut-finish-by-a-globia-creations-arctic-queen-size-be-whmqzn-min_1_1800x1800.png?v=1653032403"
+      ],
+      "rating": 4.5,
+      "category": "bed-with-storage",
+      "description": "Art Living is our premium homegrown label that's part classic, part contemporary. A delectable amalgamation of the timeless and trendy, a precarious balance of function and flair. Nice Maple is a harmonious fit for all tastes, styles and spaces.",
+      "instack": true
+    },
+    {
+      "id": 24,
+      "name": "Uniline Plus Upholstered Bed With Storage In PU Polish",
+      "price": 24999,
+      "mrp": 29999,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_a86f6e14-7653-477b-90c4-ebc5090db8f2_1800x1800.webp?v=1665499632",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_463a18be-bf89-4dc8-9f18-39611584266d_650x.webp?v=1665499632",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_928b97b3-8648-48eb-8ba7-b560b201e2d1_650x.webp?v=1665499632"
+      ],
+      "rating": 4.3,
+      "category": "bed-with-storage",
+      "description": "Nice Maple offers the best in comfort with elan. The collections are a series of modern trendy designs, simple yet striking and represent the ideals of minimalism. The designs are a perfect blend of functionality and exceptional aesthetics. Each piece is crafted with passion and follows international standards on quality and style.",
+      "instack": true
+    },
+    {
+      "id": 25,
+      "name": "Helios PU Polish Bed In White Color",
+      "price": 26999,
+      "mrp": 42999,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/1-min_4e1d2d17-d057-43f5-8d2f-5af2c5d28aa2_8_1800x1800.png?v=1653032136",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/11-min_5d4147af-6c16-457e-903c-79474cd93fec_9_1800x1800.png?v=1653032136",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/21-min_c8ab17ae-5da3-4f45-b91d-390956f7572b_3_650x.png?v=1653032136"
+      ],
+      "rating": 4.2,
+      "category": "bed-with-storage",
+      "description": "Nice Maple offers the best in comfort with elan. The collections are a series of modern trendy designs, simple yet striking and represent the ideals of minimalism. The designs are a perfect blend of functionality and exceptional aesthetics. Each piece is crafted with passion and follows international standards on quality and style.",
+      "instack": true
+    },
+    {
+      "id": 26,
+      "name": "Hollo Wooden Bed With Storage In Brown Color",
+      "price": 16999,
+      "mrp": 26999,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/61Zyt-WPn0L._SL1000_1800x1800.jpg?v=1658043380",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/41u9qzuIzML._SL1000_650x.jpg?v=1658043386",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/51CQmUh6u1L._SL1000_650x.jpg?v=1658043387"
+      ],
+      "rating": 5,
+      "category": "bed-with-storage",
+      "description": "Hollo is our premium homegrown label that's part classic, part contemporary. A delectable amalgamation of the timeless and trendy, a precarious balance of function and flair. Nice Maple is a harmonious fit for all tastes, styles and spaces.",
+      "instack": false
+    },
+    {
+      "id": 27,
+      "name": "Ellis Wooden Bed With Storage In Brown Finish",
+      "price": 25999,
+      "mrp": 26999,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/a-min_9f76abe4-ca7e-4c98-bd06-63ac4bd1f411_5_1800x1800.png?v=1653032028",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/aaa-min_19f1c163-d197-4294-bb72-1f308f148d07_2_650x.png?v=1653032028",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/aaaaa-min_1ee36a6e-3ecb-44ae-bcd4-8120f789bbb6_8_650x.png?v=1653032028"
+      ],
+      "rating": 3.9,
+      "category": "bed-with-storage",
+      "description": "Axis is our premium homegrown label that's part classic, part contemporary. A delectable amalgamation of the timeless and trendy, a precarious balance of function and flair. Nice Maple is a harmonious fit for all tastes, styles and spaces.",
+      "instack": true
+    },
+    {
+      "id": 28,
+      "name": "Camden King Size Bed In Sheesham Wood",
+      "price": 52999,
+      "mrp": 79999,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/1-min_2c7f6b46-fda4-4d43-ad66-838ad03d48d4_1800x1800.png?v=1652949513",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/01-min_7_650x.png?v=1653031510",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/11111-min_eef2c0b0-1fc6-4ef6-9cbf-b9a505da2c9c_6_1800x1800.png?v=1653031510"
+      ],
+      "rating": 3.5,
+      "category": "bed-with-storage",
+      "description": "Nice Maple offers the best in comfort with elan. The collections are a series of modern trendy designs, simple yet striking and represent the ideals of minimalism. The designs are a perfect blend of functionality and exceptional aesthetics. Each piece is crafted with passion and follows international standards on quality and style.",
+      "instack": true
+    },
+    {
+      "id": 29,
+      "name": "Dollo Wooden Bed In Tan With Storage",
+      "price": 21999,
+      "mrp": 36999,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/91eLbbe5n1L._SL1500_1800x1800.jpg?v=1652949728",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/71xFBpECr7L._SL1500_1800x1800.jpg?v=1652949730",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/81rcfgbkeaL._SL1500_650x.jpg?v=1652949732"
+      ],
+      "rating": 4.5,
+      "category": "bed-with-storage",
+      "description": "Dollo is our premium homegrown label that's part classic, part contemporary. A delectable amalgamation of the timeless and trendy, a precarious balance of function and flair. Nice Maple is a harmonious fit for all tastes, styles and spaces.",
+      "instack": false
+    },
+    {
+      "id": 30,
+      "name": "Cleopatra Bed With Storage In Brown Finish",
+      "price": 18599,
+      "mrp": 34999,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/a-min_2048x_6ff64433-ba12-4052-8004-e17b9cd2007a_650x.png?v=1652949601",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/aaaaaaaa-min_2048x_4602ed65-c100-45ee-8f42-f2716fc7b6e9_1800x1800.png?v=1652949617",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/aaaaaaaaa-min_2048x_30edd051-5cd7-42c7-8b07-038dac8b1163_5_650x.png?v=1653032316"
+      ],
+      "rating": 3.4,
+      "category": "bed-with-storage",
+      "description": "Cleopatra is our premium homegrown label that's part classic, part contemporary. A delectable amalgamation of the timeless and trendy, a precarious balance of function and flair. Nice Maple is a harmonious fit for all tastes, styles and spaces.",
+      "instack": true
+    },
+    {
+      "id": 31,
+      "name": "Helen PU Polish Bed In White Color",
+      "price": 29999,
+      "mrp": 46999,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/1-min_5852a31b-d4b6-403a-8af6-c0adabd49cc2_4_1800x1800.png?v=1653031568",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/11-min_d1f5246b-4509-4015-a0c1-56b966df11f2_4_1800x1800.png?v=1653031568",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/111-min_c7ef00e1-f22f-43fa-ad22-0fab557955c1_4_1800x1800.png?v=1653031568"
+      ],
+      "rating": 5,
+      "category": "bed-with-storage",
+      "description": "Modern Furniture offers the best in comfort with elan. The collections are a series of modern trendy designs, simple yet striking and represent the ideals of minimalism. The designs are a perfect blend of functionality and exceptional aesthetics. Each piece is crafted with passion and follows international standards on quality and style.",
+      "instack": true
+    },
+    {
+      "id": 32,
+      "name": "Honey Solid Wood King Size Bed With Storage In Honey Oak Finish",
+      "price": 36999,
+      "mrp": 58999,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/l-min_2048x_8b57ed54-44dd-4414-803e-b4f3ee41f651_1_1800x1800.png?v=1653031390",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/lllllllll-min_2048x_b478cf71-ebf0-4695-b819-c5da4d7f52ae_7_1800x1800.png?v=1653031390",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/aa-min_2048x_34f0b189-a71d-4565-b3e7-884d5519fe9e_5_1800x1800.png?v=1653031390"
+      ],
+      "rating": 4.4,
+      "category": "bed-with-storage",
+      "description": "Modern Furniture offers the best in comfort with elan. The collections are a series of modern trendy designs, simple yet striking and represent the ideals of minimalism. The designs are a perfect blend of functionality and exceptional aesthetics. Each piece is crafted with passion and follows international standards on quality and style.",
+      "instack": true
+    },
+    {
+      "id": 33,
+      "name": "Kelvin Luxury Sofa Cum Bed",
+      "price": 53999,
+      "mrp": 103999,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/Loveseat-Couches-Chair-Velvet-Upholstered-Sofa-with-Pull-out-Sofa-Bed_1800x1800.webp?v=1670045231",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/Loveseat-Couches-Chair-Velvet-Upholstered-Sofa-with-Pull-out-Sofa-Bed_2_1800x1800.webp?v=1670045231",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/Loveseat-Couches-Chair-Velvet-Upholstered-Sofa-with-Pull-out-Sofa-Bed_3_1800x1800.webp?v=1670045231"
+      ],
+      "rating": 4.1,
+      "category": "sofa-cum-beds",
+      "description": "The simple design combine to make this sofa brimming with refinement and as cozy as it looks. Come with well-padded cushions and a skin-friendly surface, a perfect seat for you to soothe away fatigue is provided by this sofa.Enjoy a cup of coffee or a read a book in the daytime, or have a good sleep at night—this L-shaped Sectional Sofa with Convertible Chaise will create more opportunities for happy and relaxing times.",
+      "instack": true
+    },
+    {
+      "id": 34,
+      "name": "Yolo Sofa Cum Bed In Grey",
+      "price": 42999,
+      "mrp": 62999,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/1-min_dcf6cb34-7f9b-4611-ae48-ab519066e819_7_1800x1800.png?v=1653032351",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/5-min_aea4515b-0fe5-4bcc-9ed9-e167db1e88a0_8_1800x1800.png?v=1653032351",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/111-min_3406438a-f688-458b-abde-f0dec36b485a_4_1800x1800.png?v=1653032351"
+      ],
+      "rating": 4.3,
+      "category": "sofa-cum-beds",
+      "description": "The simple design combine to make this sofa brimming with refinement and as cozy as it looks. Come with well-padded cushions and a skin-friendly surface, a perfect seat for you to soothe away fatigue is provided by this sofa.Enjoy a cup of coffee or a read a book in the daytime, or have a good sleep at night—this L-shaped Sectional Sofa with Convertible Chaise will create more opportunities for happy and relaxing times.",
+      "instack": true
+    },
+    {
+      "id": 35,
+      "name": "Marine Sectional Storage Sofa Cum Bed",
+      "price": 75999,
+      "mrp": 105999,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_fb3a5bab-8a8c-4d58-b7d6-7c5a915616c5_1800x1800.webp?v=1661108058",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_ae60c67f-dedc-4813-813e-5c19f6905a91_1800x1800.webp?v=1661108004",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_9183a295-f759-4978-bc13-64216e5e742a_1800x1800.webp?v=1661108066"
+      ],
+      "rating": 5,
+      "category": "sofa-cum-beds",
+      "description": "The simple design combine to make this sofa brimming with refinement and as cozy as it looks. Come with well-padded cushions and a skin-friendly surface, a perfect seat for you to soothe away fatigue is provided by this sofa.Enjoy a cup of coffee or a read a book in the daytime, or have a good sleep at night—this L-shaped Sectional Sofa with Convertible Chaise will create more opportunities for happy and relaxing times.",
+      "instack": true
+    },
+    {
+      "id": 36,
+      "name": "Roxy L-Shaped Sectional Storage Sofa Cum Bed",
+      "price": 38999,
+      "mrp": 97999,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/1-min_15838fa3-ff92-4219-91b3-e22be36e8119_1800x1800.png?v=1661169731",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/3-min_24f3b85a-fe68-403f-ae92-018a42774b08_1_1800x1800.png?v=1661169748",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/9-min_4_1800x1800.png?v=1661169796"
+      ],
+      "rating": 3.9,
+      "category": "sofa-cum-beds",
+      "description": "The simple design combine to make this sofa brimming with refinement and as cozy as it looks. Come with well-padded cushions and a skin-friendly surface, a perfect seat for you to soothe away fatigue is provided by this sofa.Enjoy a cup of coffee or a read a book in the daytime, or have a good sleep at night—this L-shaped Sectional Sofa with Convertible Chaise will create more opportunities for happy and relaxing times. ",
+      "instack": true
+    },
+    {
+      "id": 37,
+      "name": "Robin Sofa Cum Bed In Grey Color",
+      "price": 39999,
+      "mrp": 64999,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/81HC-rA6LJL._SL1500_1800x1800.jpg?v=1661168242",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/71dYcBG11aL._SL1500_1800x1800.jpg?v=1661168279",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/71uiA3x7uWL._SL1500_1800x1800.jpg?v=1661168310"
+      ],
+      "rating": 4.7,
+      "category": "sofa-cum-beds",
+      "description": "The simple design combine to make this sofa brimming with refinement and as cozy as it looks. Come with well-padded cushions and a skin-friendly surface, a perfect seat for you to soothe away fatigue is provided by this sofa.Enjoy a cup of coffee or a read a book in the daytime, or have a good sleep at night—this L-shaped Sectional Sofa with Convertible Chaise will create more opportunities for happy and relaxing times.",
+      "instack": true
+    },
+    {
+      "id": 38,
+      "name": "Bells Wing Back Chair",
+      "price": 17999,
+      "mrp": 38999,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/1-min_fdb7e4fb-c3ef-4ada-9d22-5ad2ca716857_1800x1800.png?v=1661102138",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/2-min_eb310237-2ccf-442f-92ef-fe20a1edf4de_650x.png?v=1661102247",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/4-min_edbb7e66-1eff-4b19-9b64-47243df6f8a4_650x.png?v=1661102364"
+      ],
+      "rating": 4.6,
+      "category": "high-back-chairs",
+      "description": "Mid-century design, our leisure chairs created with premium velvet fabric and stuffed with high-density sponge provide infinite coziness, accommodate with different impeccable decor style. Various available colors collocate with gold metal frame legs, it must be a great addition to your living room bedroom or home office.",
+      "instack": true
+    },
+    {
+      "id": 39,
+      "name": "Tiktok Button-Tufted Wingback Chair In Blue",
+      "price": 12999,
+      "mrp": 29999,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_ddb94010-0194-4615-b651-517ebf632d5c_1800x1800.jpg?v=1665155888",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_ba821a93-0d76-4d92-b7a7-fd3182e158e0_650x.jpg?v=1665155897",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_c364c14b-a32a-450b-ba7e-f3021baa824a_1800x1800.jpg?v=1665155906"
+      ],
+      "rating": 3,
+      "category": "high-back-chairs",
+      "description": "Mid-century design, our leisure chairs created with premium velvet fabric and stuffed with high-density sponge provide infinite coziness, accommodate with different impeccable decor style. Various available colors collocate with gold metal frame legs, it must be a great addition to your living room bedroom or home office.",
+      "instack": true
+    },
+    {
+      "id": 40,
+      "name": "Copper Grove Crawley Diamond Button-Tufted Wingback Chair",
+      "price": 17999,
+      "mrp": 42999,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/1-min_eccbffc9-99f7-4aa5-a118-4e60df6b9183_9_1800x1800.png?v=1661102956",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/111-min_68237310-b95e-466c-9614-a320380a3b51_2_650x.png?v=1661103064",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/0-min_7a911729-14d9-4878-ae1b-45d53ef13dfa_6_650x.png?v=1661103075"
+      ],
+      "rating": 3.8,
+      "category": "high-back-chairs",
+      "description": "Mid-century design, our leisure chairs created with premium velvet fabric and stuffed with high-density sponge provide infinite coziness, accommodate with different impeccable decor style. It must be a great addition to your living room bedroom or home office.",
+      "instack": true
+    },
+    {
+      "id": 41,
+      "name": "Nano Button-Tufted Wingback Chair In Green",
+      "price": 18999,
+      "mrp": 29999,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_ff2e8c72-07c8-4f0b-b881-7fa8ec817cc3_1800x1800.webp?v=1665499948",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_8081963c-d0c7-4d41-9ccb-b56b88f40a1e_650x.webp?v=1665499950",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_7049afe5-7901-4b70-9f95-d80c59842f60_650x.webp?v=1665499957"
+      ],
+      "rating": 4,
+      "category": "high-back-chairs",
+      "description": "Mid-century design, our leisure chairs created with premium velvet fabric and stuffed with high-density sponge provide infinite coziness, accommodate with different impeccable decor style. It must be a great addition to your living room bedroom or home office",
+      "instack": true
+    },
+    {
+      "id": 42,
+      "name": "Zebra Wingback Chair With Ottoman",
+      "price": 29999,
+      "mrp": 45999,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_362d165d-0987-42c8-9d00-0941ac4cfacc_1800x1800.webp?v=1663649223",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_ba54fcaf-ca99-450c-a458-72dc03728308_1800x1800.webp?v=1663649236",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_a378a6a8-714e-4752-a3f3-809de3f2bf8b_1800x1800.webp?v=1663649250"
+      ],
+      "rating": 4.1,
+      "category": "high-back-chairs",
+      "description": "Mid-century design, our leisure chairs created with premium velvet fabric and stuffed with high-density sponge provide infinite coziness, accommodate with different impeccable decor style. It must be a great addition to your living room bedroom or home office.",
+      "instack": true
+    },
+    {
+      "id": 43,
+      "name": "Navy Button-Tufted Wingback Chair In Green",
+      "price": 26999,
+      "mrp": 36999,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_bb869e10-56a4-46e6-989d-f61d38ce67f5_1800x1800.webp?v=1661151705",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_de058ab4-aa9d-475c-b676-b5fa6e924cc7_1800x1800.webp?v=1661151796",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_9f54a74c-016a-4386-9a3f-90190f80de12_1800x1800.webp?v=1661151846"
+      ],
+      "rating": 5,
+      "category": "high-back-chairs",
+      "description": "Mid-century design, our leisure chairs created with premium velvet fabric and stuffed with high-density sponge provide infinite coziness, accommodate with different impeccable decor style. It must be a great addition to your living room bedroom or home office.",
+      "instack": false
+    },
+    {
+      "id": 44,
+      "name": "Kitty Button-Tufted Wingback Chair",
+      "price": 17599,
+      "mrp": 32999,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_ae0f84dd-fc67-4009-9a8d-dccd1be75aef_1800x1800.webp?v=1661107190",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_b0c954e9-5306-476d-8327-09d5903fb109_1800x1800.webp?v=1661107342",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_0a299f16-77ae-46d0-9445-1935eff85dfd_1800x1800.webp?v=1661107405"
+      ],
+      "rating": 4.9,
+      "category": "high-back-chairs",
+      "description": "Mid-century design, our leisure chairs created with premium velvet fabric and stuffed with high-density sponge provide infinite coziness, accommodate with different impeccable decor style. Various available colors collocate with gold metal frame legs, it must be a great addition to your living room bedroom or home office.",
+      "instack": true
+    },
+    {
+      "id": 45,
+      "name": "Volvo High Back Wing Chair In Silver Color",
+      "price": 17999,
+      "mrp": 42999,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/41wnqcAQOnL_1800x1800.jpg?v=1665154150",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/51htnRzi8pL_650x.jpg?v=1665154150",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/41iTv6jrbdL_650x.jpg?v=1665154150"
+      ],
+      "rating": 4.7,
+      "category": "high-back-chairs",
+      "description": "Mid-century design, our leisure chairs created with premium velvet fabric and stuffed with high-density sponge provide infinite coziness, accommodate with different impeccable decor style.It must be a great addition to your living room bedroom or home office.",
+      "instack": false
+    },
+    {
+      "id": 46,
+      "name": "Wayside Chesterfield Wing Chair In Blue Color",
+      "price": 16999,
+      "mrp": 42999,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/61WaXAu94eL._SL1500_1800x1800.jpg?v=1647605415",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/51xlFnyQosL._SL1500_650x.jpg?v=1665156211",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/61sKiYZyciL._SL1500_650x.jpg?v=1665156211"
+      ],
+      "rating": 4.1,
+      "category": "high-back-chairs",
+      "description": "Mid-century design, our leisure chairs created with premium velvet fabric and stuffed with high-density sponge provide infinite coziness, accommodate with different impeccable decor style. It must be a great addition to your living room bedroom or home office.",
+      "instack": true
+    },
+    {
+      "id": 47,
+      "name": "Jacky Chesterfield Chair In Suede",
+      "price": 22999,
+      "mrp": 49999,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_5652140e-2109-4944-94d6-428c6ddcb41a_1800x1800.webp?v=1661106735",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_372d9f4e-8541-4d7e-abcf-8e226bcea34b_1800x1800.webp?v=1661106788",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_abb7ed03-ffbc-4cdb-84ed-21b358185d3f_650x.webp?v=1661106863"
+      ],
+      "rating": 3.3,
+      "category": "high-back-chairs",
+      "description": "Mid-century design, our leisure chairs created with premium velvet fabric and stuffed with high-density sponge provide infinite coziness, accommodate with different impeccable decor style. Various available colors collocate with gold metal frame legs, it must be a great addition to your living room bedroom or home office.",
+      "instack": true
+    },
+    {
+      "id": 48,
+      "name": "Jacky & Hill High Back Chair",
+      "price": 19999,
+      "mrp": 42999,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_7d5648da-ed67-4402-926f-726331dd4767_1800x1800.webp?v=1661106617",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_85b609e4-dce1-4b0e-a7aa-26d2f20031ea_650x.webp?v=1661106722",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_092b1cb3-c635-475f-88da-6ee611c36848_1800x1800.webp?v=1661106771"
+      ],
+      "rating": 3.2,
+      "category": "high-back-chairs",
+      "description": "Mid-century design, our leisure chairs created with premium velvet fabric and stuffed with high-density sponge provide infinite coziness, accommodate with different impeccable decor style. It must be a great addition to your living room bedroom or home office",
+      "instack": true
+    },
+    {
+      "id": 49,
+      "name": "Stuffed Wing Chair In Green Color",
+      "price": 18999,
+      "mrp": 42999,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/1_1800x1800.jpg?v=1647604616",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/11_650x.jpg?v=1647604621",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/111_650x.jpg?v=1647604621"
+      ],
+      "rating": 4.5,
+      "category": "high-back-chairs",
+      "description": "Mid-century design, our leisure chairs created with premium velvet fabric and stuffed with high-density sponge provide infinite coziness, accommodate with different impeccable decor style. It must be a great addition to your living room bedroom or home office.",
+      "instack": true
+    },
+    {
+      "id": 50,
+      "name": "Moderno Upholstered Accent Chair",
+      "price": 18599,
+      "mrp": 33499,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/moderno-accent-chair-4-min_1800x1800.jpg?v=1665163158",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/moderno-accent-chair-5-min_650x.jpg?v=1665163178",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/moderno-accent-chair-9-min_1800x1800.jpg?v=1665163189"
+      ],
+      "rating": 5,
+      "category": "accent-chairs",
+      "description": "Making a stunning effect in the living area or bedroom with stylish and beautiful Moderno Accent Chair. The seats upholstered in a luxurious, eye-catching tone, this striking accent chair is completely on style and is packed with soft foam for ideal comfort. Upholstered in high-performance quilted material, it offers luxury and sophisticated design to compliment your decoration. While stitching details give a beautiful touch.",
+      "instack": true
+    },
+    {
+      "id": 51,
+      "name": "Pepper Accent Chair ( Pair )",
+      "price": 25999,
+      "mrp": 55999,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_369a5892-ca18-4f08-967f-589862a6c3b7_1800x1800.webp?v=1661152239",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_6f67daaf-54fe-4031-be8f-5483f0b90e54_650x.webp?v=1661152275",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_276b01b4-1751-45ab-9c9b-a8f775ad336f_650x.webp?v=1661152304"
+      ],
+      "rating": 4.9,
+      "category": "accent-chairs",
+      "description": "With a rounded barrel silhouette, this modern accent chair will ramp up the style in any space. Use it as a reading chair in the bedroom, as a side chair in the living room, or as an occasional chair in the home office. For maximum impact, pair two together and enjoy the striking results. Cushioned for comfort with welting added for interest, this modern barrel chair is easy to assemble and maintain.",
+      "instack": true
+    },
+    {
+      "id": 52,
+      "name": "Oppo Suede Accent Chair",
+      "price": 8999,
+      "mrp": 19999,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_f685c181-9367-46b1-adad-c29136b91b00_1800x1800.jpg?v=1661152176",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_10134866-61a3-4c59-8391-0ba53f8ed85f_1800x1800.jpg?v=1658043608",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_1bdf82ea-b827-4d95-9cc6-8701552b0d75_1800x1800.jpg?v=1661152367"
+      ],
+      "rating": 4.3,
+      "category": "accent-chairs",
+      "description": "Mid-century design, our leisure chairs created with premium velvet fabric and stuffed with high-density sponge provide infinite coziness, accommodate with different impeccable decor style. Various available colors collocate with gold metal frame legs, it must be a great addition to your living room bedroom or home office.",
+      "instack": true
+    },
+    {
+      "id": 53,
+      "name": "Patro Upholstered Accent Chair In Suede",
+      "price": 17999,
+      "mrp": 29999,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/63329d6cef11f_Pink-chair-4-min_1800x1800.jpg?v=1665166650",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/62986b8b9671d_Screenshot_2022-06-02-13-18-29-982_com.whatsapp-min_650x.jpg?v=1665166659",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/63329d5064b72_Pink-Chair-2-min_1800x1800.jpg?v=1665166667"
+      ],
+      "rating": 4,
+      "category": "accent-chairs",
+      "description": "Elegant and eye-catching, the stunning dining chair design with a square open-framed arm is the perfect addition to any space. Made with premium velvet fabric comfortable for skin touch.High-density foam filling with a solid wood frame Magnificent set of dining chair design provides comfort and support. Strength is offered by the stunning stainless legs, which feature a beautiful gold finish. This is the perfect pick for the bedroom and living room.",
+      "instack": true
+    },
+    {
+      "id": 54,
+      "name": "Romen Couch Accent Chair In Grey Color",
+      "price": 9999,
+      "mrp": 32999,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/61kKYqbYqhL._SL1000_1800x1800.jpg?v=1659726705",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/51XoX6VdyFL_650x.jpg?v=1661169268",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/517jWuj6btL_1800x1800.jpg?v=1661169283"
+      ],
+      "rating": 2.5,
+      "category": "accent-chairs",
+      "description": "Mid-century design, our leisure chairs created with premium velvet fabric and stuffed with high-density sponge provide infinite coziness, accommodate with different impeccable decor style. Various available colors collocate with gold metal frame legs, it must be a great addition to your living room bedroom or home office.",
+      "instack": true
+    },
+    {
+      "id": 55,
+      "name": "Cozy Couch Accent Chair In Orange Color",
+      "price": 16599,
+      "mrp": 42499,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/81N22xIMZPL._SL1500_1800x1800.jpg?v=1661104127",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/71Fh6kGPkmL._SL1500_650x.jpg?v=1661104728",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/715W_H8LLqL._SL1500_650x.jpg?v=1661104737"
+      ],
+      "rating": 2.8,
+      "category": "accent-chairs",
+      "description": "Mid-century design, our leisure chairs created with premium velvet fabric and stuffed with high-density sponge provide infinite coziness, accommodate with different impeccable decor style. Various available colors collocate with gold metal frame legs, it must be a great addition to your living room bedroom or home office.",
+      "instack": true
+    },
+    {
+      "id": 56,
+      "name": "Lappy Suede Accent Chair",
+      "price": 11999,
+      "mrp": 32999,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/11-min_48b00d2c-e4ff-488f-b185-daec5c049a0c_9_1800x1800.png?v=1661107228",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/0291-min_0_1800x1800.png?v=1661107531",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/21-min_64ae9b32-1938-42f1-94a8-ebe809db6d72_0_650x.png?v=1661107466"
+      ],
+      "rating": 3.2,
+      "category": "accent-chairs",
+      "description": "Mid-century design, our leisure chairs created with premium velvet fabric and stuffed with high-density sponge provide infinite coziness, accommodate with different impeccable decor style. Various available colors collocate with gold metal frame legs, it must be a great addition to your living room bedroom or home office.",
+      "instack": true
+    },
+    {
+      "id": 57,
+      "name": "Opening Shell Designer Orange Velvet Lounge Chair",
+      "price": 19999,
+      "mrp": 39999,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/3_1024x1024_683cb119-46e4-4609-8971-9ff3852bd081_1800x1800.webp?v=1676880969",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/1_1024x1024_39b7f03b-2f5a-4875-9fd0-80bcee4b168b_1800x1800.webp?v=1676880944",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/2_1024x1024_de2dfc19-5a09-46ed-b7a1-9b3148299d59_1800x1800.webp?v=1676880953"
+      ],
+      "rating": 4.1,
+      "category": "accent-chairs",
+      "description": "Mid-century design, our leisure chairs created with premium velvet fabric and stuffed with high-density sponge provide infinite coziness, accommodate with different impeccable decor style. Various available colors collocate with gold metal frame legs, it must be a great addition to your living room bedroom or home office.",
+      "instack": true
+    },
+    {
+      "id": 58,
+      "name": "Texo Upholstered Accent Chair In Suede",
+      "price": 13999,
+      "mrp": 27599,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/6330b3c3aca0e_5_df0c6a13-1287-408b-ae64-5adf94dd68ef_1024x1024-min_1800x1800.jpg?v=1665166401",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/6330b3cf0c03e_1_f4d18137-b256-4243-aff1-a759ff43d411_1024x1024-min_650x.jpg?v=1665166400",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/6330b3e5cdd79_4_eb15f0cc-2901-426c-93fb-ef14815f0edc_1024x1024-min_1800x1800.jpg?v=1665166400"
+      ],
+      "rating": 4.7,
+      "category": "accent-chairs",
+      "description": "Elegant and eye-catching, the stunning dining chair design with a square open-framed arm is the perfect addition to any space. Made with premium velvet fabric, comfortable for skin touch.High-density foam filling with a solid wood frame Magnificent set of dining chair design provides comfort and support. Strength is offered by the stunning stainless legs, which feature a beautiful gold finish. This is the perfect pick for the bedroom and living room.",
+      "instack": false
+    },
+    {
+      "id": 59,
+      "name": "Roxanne Upholstered Arm Chair",
+      "price": 12999,
+      "mrp": 25999,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/roxanne-arm-chair-1-min_1800x1800.jpg?v=1665163930",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/roxanne-arm-chair-6-min_1800x1800.jpg?v=1665163930",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/roxanne-arm-chair-10-min_1800x1800.jpg?v=1665163930"
+      ],
+      "rating": 3,
+      "category": "accent-chairs",
+      "description": "Roxanne arm chair with modernized clues, vibrant and subtle colors. The trendy shape with natural finish really amaze the ambience.Decorative designs with a traditional touch Signature,Collections,Impeccable craftsmanship",
+      "instack": true
+    },
+    {
+      "id": 60,
+      "name": "Mariana Velvet Finish Barrel Chair With Foot Stool In Wine Colour",
+      "price": 19599,
+      "mrp": 45599,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/comdy-solid-wood-lounge-chair-with-wine-colour-upholstered-by-woodsworth-comdy-solid-wood-lounge-cha-cytxoa-min_1800x1800.jpg?v=1663999942",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/comdy-solid-wood-lounge-chair-with-wine-colour-upholstered-by-woodsworth-comdy-solid-wood-lounge-cha-tippbe-min_1800x1800.jpg?v=1663999942",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/comdy-solid-wood-lounge-chair-with-wine-colour-upholstered-by-woodsworth-comdy-solid-wood-lounge-cha-jwnc41-min_650x.jpg?v=1663999942"
+      ],
+      "rating": 4.3,
+      "category": "accent-chairs",
+      "description": "Mid-century design, our leisure chairs created with premium velvet fabric and stuffed with high-density sponge provide infinite coziness, accommodate with different impeccable decor style. Various available colors collocate with gold metal frame legs, it must be a great addition to your living room bedroom or home office.",
+      "instack": false
+    },
+    {
+      "id": 61,
+      "name": "Cosmo Chair Embossing Fleece Upholstered Accent Sofa Chair",
+      "price": 26999,
+      "mrp": 56999,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_2d547056-7440-403d-bbd3-521faea29a5e_1800x1800.webp?v=1658861651",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_c8e6d997-5406-4a73-b532-bb27490a069f_1800x1800.webp?v=1661102989",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_32dd4308-1963-4372-a1d5-30fc8397ae82_1800x1800.webp?v=1661102972"
+      ],
+      "rating": 4,
+      "category": "accent-chairs",
+      "description": "Mid-century design, our leisure chairs created with premium velvet fabric and stuffed with high-density sponge provide infinite coziness, accommodate with different impeccable decor style. Various available colors collocate with gold metal frame legs, it must be a great addition to your living room bedroom or home office.",
+      "instack": true
+    },
+    {
+      "id": 62,
+      "name": "Tiffo Suede Lounger In Blush Pink Color",
+      "price": 18599,
+      "mrp": 32499,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/51JLYtQP5NL_1800x1800.jpg?v=1647606114",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/51wtniAw1sL_1800x1800.jpg?v=1647606114",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/31i-yj6wYCL_1800x1800.jpg?v=1647606114"
+      ],
+      "rating": 4.1,
+      "category": "loungers",
+      "description": "Recline in style with this Simple Living chaise lounge. In five lovely hues, this chaise is the perfect fit for your bedroom, living room or office. Constructed of sturdy hard wood, smooth microfiber fabric, and polyurethane foam filling, this chaise is as durable as it is beautiful.",
+      "instack": true
+    },
+    {
+      "id": 63,
+      "name": "Rolly Chesterfield Lounger In Suede",
+      "price": 18999,
+      "mrp": 34450,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/undef_src_sa_picid_738661_x_1800_type_color_image_1024x1024_89adefe9-4264-44ef-a596-cbbf1e6fe941_1800x1800.webp?v=1667544912",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/undef_src_sa_picid_738662_x_1800_type_whitesh_image_1024x1024_cee057c9-c3c4-4b54-af28-2ee70aad117a_1800x1800.webp?v=1667544976",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/undef_src_sa_picid_738663_x_1800_type_whitesh_image_1024x1024_a0d0f603-88e1-43ab-b16f-aafebc3e698f_1800x1800.webp?v=1667544988"
+      ],
+      "rating": 4,
+      "category": "loungers",
+      "description": "Recline in style with this Simple Living chaise lounge. In five lovely hues, this chaise is the perfect fit for your bedroom, living room or office. Constructed of sturdy hard wood, smooth microfiber fabric, and polyurethane foam filling, this chaise is as durable as it is beautiful.",
+      "instack": true
+    },
+    {
+      "id": 64,
+      "name": "Unicorn Suede Lounger In Blush Pink Color",
+      "price": 18599,
+      "mrp": 29999,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_dfe0a85c-d60c-4838-9e9d-762ff9b8e401_1800x1800.jpg?v=1661338315",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_5dc5dae4-807e-4855-bea5-318b4c65e7ff_1800x1800.jpg?v=1661338315",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_0460008b-f9fe-4908-8a2d-3858f0b0a7e5_1800x1800.jpg?v=1661338315"
+      ],
+      "rating": 3.8,
+      "category": "loungers",
+      "description": "Recline in style with this Simple Living chaise lounge. In five lovely hues, this chaise is the perfect fit for your bedroom, living room or office. Constructed of sturdy hard wood, smooth microfiber fabric, and polyurethane foam filling, this chaise is as durable as it is beautiful.",
+      "instack": true
+    },
+    {
+      "id": 65,
+      "name": "Elle Chesterfield Suede Lounger In Blue Color",
+      "price": 19999,
+      "mrp": 44599,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/51GEhMPetdL_1800x1800.jpg?v=1661104902",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/51Zr3YupG2L_650x.jpg?v=1661105142",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/51hENs6_gZL._SL1000_650x.jpg?v=1655616835"
+      ],
+      "rating": 4.3,
+      "category": "loungers",
+      "description": "Recline in style with this Simple Living chaise lounge. In five lovely hues, this chaise is the perfect fit for your bedroom, living room or office. Constructed of sturdy hard wood, smooth microfiber fabric, and polyurethane foam filling, this chaise is as durable as it is beautiful.",
+      "instack": true
+    },
+    {
+      "id": 66,
+      "name": "Diffo Quilted Lounger In Blue Color",
+      "price": 15999,
+      "mrp": 42599,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/71i4SjwBU-L._SL1500_1800x1800.jpg?v=1661104181",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/81_SMXNIVpL._SL1500_650x.jpg?v=1661104628",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/51okqK6RsyL._SL1284_1800x1800.jpg?v=1661104687"
+      ],
+      "rating": 3.2,
+      "category": "loungers",
+      "description": "Recline in style with this Simple Living chaise lounge. In five lovely hues, this chaise is the perfect fit for your bedroom, living room or office. Constructed of sturdy hard wood, smooth microfiber fabric, and polyurethane foam filling, this chaise is as durable as it is beautiful.",
+      "instack": true
+    },
+    {
+      "id": 67,
+      "name": "Jasmine Lounger In Maroon Color",
+      "price": 14999,
+      "mrp": 29999,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/undef_src_sa_picid_761933_x_1800_type_color_image_1024x1024_89bcc3dc-d9d2-4eda-8236-8dfc60bc475e_1800x1800.webp?v=1667544690",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/undef_src_sa_picid_761933_x_1800_type_whitesh_image_1024x1024_81874251-55aa-49ab-914f-1129a03d11a1_1800x1800.webp?v=1667544690",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/undef_src_sa_picid_761934_x_1800_type_whitesh_image_1024x1024_b774db32-aba7-4500-b0f4-631d054e04f0_1800x1800.webp?v=1667544690"
+      ],
+      "rating": 5,
+      "category": "loungers",
+      "description": "Recline in style with this Simple Living chaise lounge. In five lovely hues, this chaise is the perfect fit for your bedroom, living room or office. Constructed of sturdy hard wood, smooth microfiber fabric, and polyurethane foam filling, this chaise is as durable as it is beautiful.",
+      "instack": true
+    },
+    {
+      "id": 68,
+      "name": "Curving Q Suede Lounger In Beige Color",
+      "price": 18599,
+      "mrp": 34499,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/banner_1024x1024_e9f1bb15-424b-4951-bb4d-2838b8039b04_1800x1800.webp?v=1667544352",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/Knightsbridge-Tufted-Oversized-Chaise-Lounge-by-iNSPIRE-Q-Artisan_1_1024x1024_cfbf59e1-324d-4045-ace9-21034c98fe09_1800x1800.webp?v=1667544362",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/banner_1024x1024_e9f1bb15-424b-4951-bb4d-2838b8039b04_1800x1800.webp?v=1667544352"
+      ],
+      "rating": 3.6,
+      "category": "loungers",
+      "description": "",
+      "instack": true
+    },
+    {
+      "id": 69,
+      "name": "Loveseat Quilted Suede Lounger",
+      "price": 18599,
+      "mrp": 55649,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/61DNHI5FPXL._SL1000_1800x1800.jpg?v=1658043507",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/31DYzjB9luL._SL1000_1800x1800.jpg?v=1658043509",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/31WmFX7xeTL._SL1000_1800x1800.jpg?v=1658043513"
+      ],
+      "rating": 4.3,
+      "category": "loungers",
+      "description": "Recline in style with this Simple Living chaise lounge. In five lovely hues, this chaise is the perfect fit for your bedroom, living room or office. Constructed of sturdy hard wood, smooth microfiber fabric, and polyurethane foam filling, this chaise is as durable as it is beautiful.",
+      "instack": true
+    },
+    {
+      "id": 70,
+      "name": "Unicorn Suede Lounger In Red Color",
+      "price": 14449,
+      "mrp": 32499,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/2_1800x1800.jpg?v=1647606387",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/41AbPGC_7mL_1800x1800.jpg?v=1647606387",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/41uLyuLAcZL_1800x1800.jpg?v=1647606387"
+      ],
+      "rating": 2.5,
+      "category": "loungers",
+      "description": "Recline in style with this Simple Living chaise lounge. In five lovely hues, this chaise is the perfect fit for your bedroom, living room or office. Constructed of sturdy hard wood, smooth microfiber fabric, and polyurethane foam filling, this chaise is as durable as it is beautiful.",
+      "instack": false
+    },
+    {
+      "id": 71,
+      "name": "Cross Line Lounger In Suede",
+      "price": 19999,
+      "mrp": 29999,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/files/image_59a1bc47-23e2-4b40-9dbe-746e2a7438e7_1800x1800.webp?v=1682672547",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/files/image_a439ad06-5d81-46a8-873d-8876bbd724bb_1800x1800.webp?v=1682672547",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/files/image_994e4a14-9474-4e94-a8eb-794b7530942a_1800x1800.webp?v=1682672547"
+      ],
+      "rating": 5,
+      "category": "loungers",
+      "description": "Recline in style with this Simple Living chaise lounge. In five lovely hues, this chaise is the perfect fit for your bedroom, living room or office. Constructed of sturdy hard wood, smooth microfiber fabric, and polyurethane foam filling, this chaise is as durable as it is beautiful.",
+      "instack": true
+    },
+    {
+      "id": 72,
+      "name": "Mosco Lounger In Suede",
+      "price": 15999,
+      "mrp": 29999,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/files/image_429c75f1-4d9a-4e06-ba69-302da3643218_1800x1800.webp?v=1682672393",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/files/image_fdbab66c-62e7-4cb7-bb99-c3b7f8eb2c43_1800x1800.webp?v=1682672407",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/files/image_805221cc-e06c-43bf-8406-74a5c6312cdb_1800x1800.webp?v=1682672413"
+      ],
+      "rating": 4.9,
+      "category": "loungers",
+      "description": "Recline in style with this Simple Living chaise lounge. In five lovely hues, this chaise is the perfect fit for your bedroom, living room or office. Constructed of sturdy hard wood, smooth microfiber fabric, and polyurethane foam filling, this chaise is as durable as it is beautiful.",
+      "instack": true
+    },
+    {
+      "id": 73,
+      "name": "Simple Living Chaise Lounge",
+      "price": 17499,
+      "mrp": 34499,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/8-min_1ae9819c-ee9f-48de-901c-f12566eebd32_1800x1800.png?v=1647197553",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/2-min_4d59d8dc-40ad-4706-aaf3-8437ca959259_1800x1800.png?v=1647197552",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/4-min_675a346e-f35b-409d-8773-ec22062f0add_1800x1800.png?v=1647197552"
+      ],
+      "rating": 4.1,
+      "category": "loungers",
+      "description": "Recline in style with this Simple Living chaise lounge. In five lovely hues, this chaise is the perfect fit for your bedroom, living room or office. Constructed of sturdy hard wood, smooth microfiber fabric, and polyurethane foam filling, this chaise is as durable as it is beautiful.",
+      "instack": true
+    },
+    {
+      "id": 74,
+      "name": "Dolcy Upholstered Bed In Pink Color Without Storage",
+      "price": 29999,
+      "mrp": 49999,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/61k9bJWhVKL._SL1000_1800x1800.jpg?v=1652949728",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/41tvC4lLANL._SL1000_650x.jpg?v=1652949730",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/41tvC4lLANL._SL1000_650x.jpg?v=1652949730"
+      ],
+      "rating": 4,
+      "category": "kids-bed",
+      "description": "Fulfilling Dreams is like a fine delicacy that is desired by many, but enjoyed by few. Here you will find the perfect combination of your dreams & our passion coming together to make your design dreams come true. Whether our furniture becomes the centrepiece of your freshly designed room or a perfect accent to existing decor, we deliver furniture for your individual needs.",
+      "instack": true
+    },
+    {
+      "id": 75,
+      "name": "Dino Upholstered Bed Without Storage In Blue Suede",
+      "price": 43549,
+      "mrp": 53599,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/61HyONuEQNL-min_1800x1800.jpg?v=1652949697",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/61CRbFXgFvL-min_650x.jpg?v=1652949700",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/41a4RYkj8JL._SL1000_-min_650x.jpg?v=1665508558"
+      ],
+      "rating": 4.5,
+      "category": "kids-bed",
+      "description": "Fulfilling Dreams is like a fine delicacy that is desired by many, but enjoyed by few. Here you will find the perfect combination of your dreams & our passion coming together to make your design dreams come true. Whether our furniture becomes the centrepiece of your freshly designed room or a perfect accent to existing decor, we deliver furniture for your individual needs.",
+      "instack": true
+    },
+    {
+      "id": 76,
+      "name": "Tulip Upholstered Luxury Bed Without Storage In Pink",
+      "price": 38999,
+      "mrp": 89499,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_801953f2-41ca-47cf-a928-0f196049fd0e_1800x1800.webp?v=1665508764",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_125d0871-8437-4af1-883a-2aadf82d16e5_500x.webp?v=1665508776",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_110391e7-3776-45dc-a92b-0e32710a2606_1800x1800.webp?v=1665508793"
+      ],
+      "rating": 4,
+      "category": "kids-bed",
+      "description": "Fulfilling Dreams is like a fine delicacy that is desired by many, but enjoyed by few. Here you will find the perfect combination of your dreams & our passion coming together to make your design dreams come true. Whether our furniture becomes the centrepiece of your freshly designed room or a perfect accent to existing decor, we deliver furniture for your individual needs.",
+      "instack": true
+    },
+    {
+      "id": 77,
+      "name": "Robotic Upholstered Luxury Bed Without Storage In Blue Leatherette",
+      "price": 58549,
+      "mrp": 89499,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_71acf50d-07b0-457e-9544-ccc4344b512a_1800x1800.webp?v=1665508718",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_aea3ed95-0156-4ba6-868e-19c997fc9fdd_1800x1800.webp?v=1665508730",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_07440747-2ee9-4527-bf76-3969e15d0cf1_1800x1800.webp?v=1665508762"
+      ],
+      "rating": 4,
+      "category": "kids-bed",
+      "description": "Fulfilling Dreams is like a fine delicacy that is desired by many, but enjoyed by few. Here you will find the perfect combination of your dreams & our passion coming together to make your design dreams come true. Whether our furniture becomes the centrepiece of your freshly designed room or a perfect accent to existing decor, we deliver furniture for your individual needs.",
+      "instack": false
+    },
+    {
+      "id": 78,
+      "name": "Bunny Upholstered Luxury Bed In Pink Suede",
+      "price": 39499,
+      "mrp": 82599,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_332632f1-c0fa-4cc1-bd7a-29e9f4765730_1800x1800.webp?v=1665508810",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_d0db31a0-36b7-41e7-b2fb-053992480fd0_650x.webp?v=1665508829",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_b79402fa-5d48-427e-b814-cb99f75389a2_650x.webp?v=1665508848"
+      ],
+      "rating": 2.7,
+      "category": "kids-bed",
+      "description": "Fulfilling Dreams is like a fine delicacy that is desired by many, but enjoyed by few. Here you will find the perfect combination of your dreams & our passion coming together to make your design dreams come true. Whether our furniture becomes the centrepiece of your freshly designed room or a perfect accent to existing decor, we deliver furniture for your individual needs.",
+      "instack": true
+    },
+    {
+      "id": 79,
+      "name": "Timtom Upholstered Luxury Bed Without Storage In Pink",
+      "price": 42499,
+      "mrp": 83599,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_6061305c-930f-4453-aeb7-77e98e775e35_1800x1800.webp?v=1665509004",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_fe4e950a-18a6-466f-a6f4-d20576bb1e59_1800x1800.webp?v=1665509050",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_a58ca7ba-4a48-4624-ac87-3c8b66582cbb_650x.webp?v=1665509022"
+      ],
+      "rating": 5,
+      "category": "kids-bed",
+      "description": "Fulfilling Dreams is like a fine delicacy that is desired by many, but enjoyed by few. Here you will find the perfect combination of your dreams & our passion coming together to make your design dreams come true. Whether our furniture becomes the centrepiece of your freshly designed room or a perfect accent to existing decor, we deliver furniture for your individual needs.",
+      "instack": true
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
+
