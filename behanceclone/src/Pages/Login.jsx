@@ -3,40 +3,59 @@ import styled from "styled-components";
 //import { Button } from '@chakra-ui/react'
 import googleLogo from '../Image and Logo/download (1).png'
 import gitLogo from '../Image and Logo/GitHub-Mark.png'
-// import { useLocation, useNavigate } from 'react-router-dom';
-// import { useDispatch } from 'react-redux';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { login } from '../Redux/AuthReducer/action';
+import { Heading } from '@chakra-ui/react';
+import logo from '../Image and Logo/WhatsApp Image 2023-05-03 at 9.10.04 PM.jpeg'
 const Login = () => {
-    const [email , setEmail] = useState('');
-  const [password , setPassword] = useState(''); 
-//   const navigate = useNavigate();
-//   const location = useLocation();
-//   const dispatch = useDispatch();
-  const handleLoginBtn =(e)=>{
-    e.preventDefault();
-    // dispatch(login({email , password})).then((res)=>{
-    //   navigate(location.state)
-    // })
-    console.log(email , password);
-    setEmail('');
-    setPassword('');
-  }
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const navigate = useNavigate();
+    const location = useLocation();
+    const dispatch = useDispatch();
+    const isAuth = useSelector(st => st.authReducer.isAuth);
+    const isError = useSelector(st => st.authReducer.isError);
+    console.log(isAuth);
+    const handleLoginBtn = (e) => {
+        e.preventDefault();
+        dispatch(login({ email, password })).then((res) => {
+            navigate(location.state)
+        })
+        // console.log(email , password);
+        // setEmail('');
+        // setPassword('');
+    }
     return (
         <Div className='login'>
-            <DIV className='1stdiv'></DIV>
-            <DIV2 className='2nddiv'>
-                <h1 color={'white'} fontSize={'30px'}>Login</h1>
+            <Container>
+                <Logo src={logo} alt="" />
+                <Headin>MODERN FURNITURE</Headin>
+            </Container>
+            <DIV2 className='2nddiv' isAuth={isAuth} isError={isError}>
+                <Heading id='mainHeading'>{isAuth ? 'Login Successfull' : 'Login to Continue'}</Heading>
+                <Heading as='h5' size='sm' padding={5}>
+                    No Account  <Link style={{
+                        color: 'blue'
+                    }} to={'/signup'}>
+                        Create A New Account?
+                    </Link>
+                </Heading>
                 <form action="" onSubmit={handleLoginBtn}>
-                    <input type="email" name="" id=""  value={email} onChange={(e)=>setEmail(e.target.value)}/>
-                    <input type="password" name="" id="" value={password} onChange={(e)=>setPassword(e.target.value)}/>
+                    <input type="email" name="" id="" value={email} onChange={(e) => setEmail(e.target.value)} placeholder='Enter Registerd Email' />
+                    <input type="password" name="" id="" value={password} onChange={(e) => setPassword(e.target.value)} placeholder='Enter Password' />
                     <button>LOGIN</button>
                 </form>
-                <hr /> <h3>or</h3> <hr />
+                <hr /> <h2>or</h2> <hr />
                 <ButtonDiv>
-                    <button id='googleBtn' style={{ backgroundColor: 'blue', color: 'white', borderRadius: '5px' }}>
-                        <img src={googleLogo} alt="google logo" width='30px' style={{ borderRadius: '50%', marginRight: '15px' }} />
-                        <span style={{ display: 'inline-block' }}> Continue With Google</span>
+                    <button className="googleBtn">
+                        <img id="googleImg" src={googleLogo} alt="" width={'40px'} />
+                        Continue With Google
                     </button>
-                    <button style={{borderRadius: '5px' }}> <img src={gitLogo} alt="git logo" width='35px' style={{ borderRadius: '50%', marginRight: '15px' }} /> Continue With GitHub</button>
+                    <button className="githubBtn">
+                        <img id="githubImg" src={gitLogo} alt="" width={'40px'} />
+                        Continue With GitHub
+                    </button>
                 </ButtonDiv>
             </DIV2>
 
@@ -57,26 +76,46 @@ display: flex;
  gap: 50px;
 `
 const ButtonDiv = styled.div`
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: space-between;
-button{
-    margin: 10px;
-    width: 600px;
-    padding: 15px;
-    font-size: xx-large;
-    border-radius: 20px;
+
+
+.googleBtn, .githubBtn {
+    display: flex;
     align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
     border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    color: #fff;
     cursor: pointer;
-}
-#googleBtn:hover{
-    background-color: white;
-    color: blue;
-}
+    width: 600px;
+    margin-left: 15px;
+    margin-top: 10px;
+    font-size: x-large;
+  }
+
+  .googleBtn {
+    background-color: #4285F4;
+  }
+
+  .githubBtn {
+    background-color: #24292E;
+  }
+
+  #googleImg, #githubImg {
+    margin-right: 10px;
+    border-radius: 50%;
+  }
+
+  .googleBtn:hover, .githubBtn:hover {
+    opacity: 0.8;
+  }
+
 `
 let DIV2 = styled.div`
+#mainHeading{
+    color: ${({ isAuth }) => (isAuth ? 'green' : 'red')};
+}
 width: 40%;
 //border: 1px solid red;
 margin-top : 30px ;
@@ -100,7 +139,10 @@ form{
        border-radius: 10px;
        border: none;
        font-size: large;
-       
+       border: ${({ isError }) => (isError ? '1px solid red' : '1px solid black')};
+    }
+    input:hover{
+        border: 1px solid blue;
     }
    button{
     margin: 30px;
@@ -119,7 +161,30 @@ form{
    }
 }
 `
-let DIV = styled.div`
-width: 50%;
-//border: 1px solid red;
-`
+// let DIV = styled.div`
+// width: 50%;
+// //border: 1px solid red;
+// `
+
+const Container = styled.div`
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+const Logo = styled.img`
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1rem;
+`;
+
+const Headin = styled.h1`
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  color: #2b4231;
+`;

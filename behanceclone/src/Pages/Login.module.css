@@ -1,0 +1,28 @@
+.googleBtn, .githubBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .googleBtn {
+    background-color: #4285F4;
+  }
+
+  .githubBtn {
+    background-color: #24292E;
+  }
+
+  #googleImg, #githubImg {
+    margin-right: 10px;
+    border-radius: 50%;
+  }
+
+  .googleBtn:hover, .githubBtn:hover {
+    opacity: 0.8;
+  }
