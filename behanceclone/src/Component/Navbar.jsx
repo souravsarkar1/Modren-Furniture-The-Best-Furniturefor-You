@@ -5,12 +5,25 @@ import { AiOutlineSearch,AiOutlineHeart } from 'react-icons/ai';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { FaRegUser } from 'react-icons/fa';
 import { GiShoppingCart } from 'react-icons/gi';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { sidebartogel } from '../Redux/scrollReducer/action';
 
 
 const Navbar = () => {
     const downnav=useSelector((store)=>store.ScrollReducer.static)
-console.log(downnav)
+    const sideBar=useSelector((store)=>store.ScrollReducer.sidebarTogel)
+const dispatch=useDispatch();
+
+
+
+const handleTogle=()=>{
+    if(sideBar===true){
+        dispatch(sidebartogel(false))
+    }else if(sideBar===false){
+        dispatch(sidebartogel(true))
+    }
+   
+}
 
   return (
     <DIV downnav={downnav} >
@@ -419,7 +432,7 @@ console.log(downnav)
 
          <nav className='downDiv1'>
          <div className='leftsideofNavbar'>
-             <RxHamburgerMenu/> 
+             <RxHamburgerMenu onClick={handleTogle}/> 
              <AiOutlineSearch/>
              </div>
          <div className='logoOfphoneNavbar'> 
@@ -432,7 +445,7 @@ console.log(downnav)
          </nav>
          <nav className='downDiv1 downDiv2' style={{transform:downnav? "translateY(0%)" :"translateY(-100%)" , opacity:downnav? 100:0}}>
          <div className='leftsideofNavbar'>
-             <RxHamburgerMenu/> 
+             <RxHamburgerMenu onClick={handleTogle} /> 
              <AiOutlineSearch/>
              </div>
          <div className='logoOfphoneNavbar'> 

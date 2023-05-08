@@ -1,8 +1,8 @@
-import { DOWNNAV, STICK } from "./actionType"
+import {  SIDEBARTOGEL, STICK } from "./actionType"
 
 const initial={
     static:false,
-    downNav:false
+    sidebarTogel:false
 }
 
 export const ScrollReducer=(state=initial,{type,payload} )=>{
@@ -14,10 +14,10 @@ switch (type) {
             static:payload
         }
     }
-    case DOWNNAV:{
+    case SIDEBARTOGEL:{
         return {
             ...state,
-            downNav:true
+            sidebarTogel:payload
         }
     }
         

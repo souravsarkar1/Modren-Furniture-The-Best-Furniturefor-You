@@ -1,3 +1,3 @@
 
 export const STICK="STICK"
-export const DOWNNAV="DOWNNAV"
+export const SIDEBARTOGEL="SIDEBARTOGEL"
