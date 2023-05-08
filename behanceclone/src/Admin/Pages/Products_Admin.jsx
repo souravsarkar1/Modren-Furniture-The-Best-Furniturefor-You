@@ -9,11 +9,7 @@ import {
     Td,
     TableContainer,
 } from '@chakra-ui/react'
-<<<<<<< HEAD:behanceclone/src/Admin/Pages/Products.jsx
 export default function Product() {
-=======
-export default function ProductsAdmin() {
->>>>>>> 11a06856b947c81147f76134973e7c90b38d7c7d:behanceclone/src/Admin/Pages/Products_Admin.jsx
     return (
         <div style={{ width: '85%', margin: 'auto' }}>
 

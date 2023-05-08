@@ -1,11 +1,6 @@
 import React from 'react'
-<<<<<<< HEAD:behanceclone/src/Admin/Pages/Deshbord.jsx
 import '../Admin.module.css'
 import { Container, Heading, Avatar } from '@chakra-ui/react'
-=======
-import '../Admin/Admin.css'
-import { Container, Heading,  Avatar } from '@chakra-ui/react'
->>>>>>> 11a06856b947c81147f76134973e7c90b38d7c7d:behanceclone/src/Admin/Pages/DeshbordAdmin.jsx
 
 export default function Deshbord() {
     return (

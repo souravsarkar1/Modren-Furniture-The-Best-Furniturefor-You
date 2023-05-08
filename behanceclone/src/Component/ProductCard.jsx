@@ -1,12 +1,9 @@
 import React from "react";
 
 import styled from "styled-components";
-<<<<<<< HEAD
 //import { Link } from "react-router-dom";
-=======
 // import { Link } from "react-router-dom";
 import { AiFillStar } from "react-icons/ai";
->>>>>>> 11a06856b947c81147f76134973e7c90b38d7c7d
 import { AiOutlineHeart, AiOutlineZoomIn } from "react-icons/ai";
 import { HiOutlineShoppingCart } from "react-icons/hi";
 import {  Heading, Text, Button, Flex } from "@chakra-ui/react";
@@ -23,12 +20,12 @@ function ProductCard({
 }) {
   return (
     <DIV>
-      <Box className="outer">
+      <div className="outer">
         <img src={images[0]} alt={name} />
-        <Box className="inner">
+        <div className="inner">
           <img src={images[1]} alt={name} />
-        </Box>
-      </Box>
+        </div>
+      </div>
       <Flex className="fun_btns">
         <Button className="functional_BTN">
           <HiOutlineShoppingCart />
