@@ -9,7 +9,7 @@ import {
     Td,
     TableContainer,
 } from '@chakra-ui/react'
-export default function User() {
+export default function UserAdmin() {
     return (
         <div style={{ width: '85%', margin: 'auto' }}>
 
