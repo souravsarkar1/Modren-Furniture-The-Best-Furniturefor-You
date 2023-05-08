@@ -52,10 +52,12 @@ const Login = () => {
                         <img id="googleImg" src={googleLogo} alt="" width={'40px'} />
                         Continue With Google
                     </button>
+                    <a href="https://github.com/login/oauth/authorize?client_id=e943d3a1b6c71a113d3c&scope=user">
                     <button className="githubBtn">
                         <img id="githubImg" src={gitLogo} alt="" width={'40px'} />
                         Continue With GitHub
                     </button>
+                    </a>
                 </ButtonDiv>
             </DIV2>
 
@@ -74,6 +76,43 @@ padding: 10px;
 background-image: linear-gradient(to right, #2c5aa3, #9c1986);
 display: flex;
  gap: 50px;
+ @media (min-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+
+        
+
+}
+@media (max-width:480px)  { /* smartphones, Android phones, landscape iPhone */ 
+        display: flex;
+        flex-direction: column;
+        Container{
+            width: 90%;
+            padding : 5px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+        }
+        DIV2{
+            width: 90%;
+            padding : 5px;
+            margin: auto;
+        }
+}
+@media (max-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
+        
+
+}
+@media (max-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+        
+
+}
+@media (max-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+
+
+
+@media (max-width:1281px) { /* hi-res laptops and desktops */
+        
+        
+        }
 `
 const ButtonDiv = styled.div`
 

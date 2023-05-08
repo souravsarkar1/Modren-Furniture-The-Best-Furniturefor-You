@@ -1,10 +1,10 @@
 import React from "react";
 
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 import { AiOutlineHeart, AiOutlineZoomIn } from "react-icons/ai";
 import { HiOutlineShoppingCart } from "react-icons/hi";
-import { Box, Heading, Text, Button, Flex } from "@chakra-ui/react";
+import {  Heading, Text, Button, Flex } from "@chakra-ui/react";
 function ProductCard({
   id,
   name,

@@ -5,10 +5,12 @@ import Login from './Login'
 import Signup from './Signup'
 import Products from "./Products";
 import SingleProduct from "./SingleProduct";
-import Products from '../Admin/Pages/Products'
+import Product from '../Admin/Pages/Products'
 import Deshbord from '../Admin/Pages/Deshbord'
 import User from '../Admin/Pages/User'
 import Sofa from '../Admin/Pages/Oders'
+import ProductList from '../Component/ProductList';
+import ProductCard from '../Component/ProductCard';
 
 export const MainRoutes = () => {
   return (
@@ -18,10 +20,12 @@ export const MainRoutes = () => {
         <Route path='/signup' element={<Signup />} />
         <Route path='/products' element={<Products />} />
         <Route path="/products/:pid" element={<SingleProduct />} />
-        <Route path='/' element={<Deshbord />} />
+        <Route path='/admindashbord' element={<Deshbord />} />
         <Route path='/user' element={<User />} />
         <Route path='/order' element={<Sofa/>}/>
-
+        <Route path='/product' element={<Product/>}/>
+        <Route path='/productlist' element={<ProductList/>}/>
+        <Route path='/productcard' element={<ProductCard/>}/>
       </Routes>
     </div>
   );

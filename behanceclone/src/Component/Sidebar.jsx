@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import styled from "styled-components";
 import { Box, Heading } from "@chakra-ui/react";
-import styles from "../styles/Sidebar.module.css";
+//import styles from "../styles/Sidebar.module.css";
 function SideBar() {
   const [searchParams, setSearchParams] = useSearchParams();
   const initialCategory = searchParams.getAll("category");

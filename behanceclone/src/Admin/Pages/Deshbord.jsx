@@ -1,6 +1,6 @@
 import React from 'react'
-import '../Admin/Admin.css'
-import { Container, Heading, Center, Avatar } from '@chakra-ui/react'
+import '../Admin.module.css'
+import { Container, Heading, Avatar } from '@chakra-ui/react'
 
 export default function Deshbord() {
     return (
