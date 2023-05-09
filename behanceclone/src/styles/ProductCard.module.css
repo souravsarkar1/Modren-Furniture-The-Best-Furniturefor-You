@@ -1,0 +1,100 @@
+.CardCont{
+  padding: 10px;
+    text-align: center;
+    position: relative;
+    z-index: 0;
+    background-color: white;
+   letter-spacing :-1px;
+   /* word-spacing: -1px; */
+    transition: all .3s ease-out;
+}
+.CardCont .outer {
+  width: 100%;
+  position: relative;
+  /* z-index: 10; */
+}
+.outer img,
+.inner img {
+  width: 100%;
+}
+.inner {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: none;
+}
+.outer:hover .inner {
+  display: block;
+}
+.grid_element{
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+.CardCont .fun_btns {
+    display: none;
+    font-size: x-large;
+    position: absolute;
+    z-index: 444;
+    top:10px;
+    right: 5px;
+    padding: 0px;
+    margin:0px ;
+   }
+  .CardCont:hover .fun_btns{
+    display:block;
+  }
+  .details{
+    text-align: justify;
+    padding: 10px;
+  }
+    .CardCont .functional_BTN {
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+  border: 1px solid black;  
+}
+.CardCont .functional_BTN:hover {
+  background-color:transparent;
+  color: black;
+  border: 1px solid black;
+}
+.CardCont img {
+  width: 100%;
+}
+.CardCont button {
+  padding: 5px 10px;
+  font-size: large;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+}
+.ProductName {
+  font-weight:600; 
+  font-size: large;
+}
+.ProductName:hover{
+  color:rgb(30, 30, 179);
+}
+.details p{
+  margin: 0px;
+  padding: 0px;
+}
+.iconNamecart , .iconNamewish , .iconNamezoom{
+  visibility: hidden;
+  font-size: 10px;
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+ }
+.addcart:hover .iconNamecart{
+  visibility: visible;
+}
+.addwish:hover .iconNamewish{
+  visibility: visible;
+}
+.zoomout:hover .iconNamezoom{
+  visibility: visible;
+}
