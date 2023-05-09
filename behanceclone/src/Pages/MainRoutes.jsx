@@ -8,15 +8,13 @@ import SingleProduct from "./SingleProduct";
 //import Deshbord from '../Admin/Pages/Deshbord'
 //import User from '../Admin/Pages/User'
 //import Sofa from '../Admin/Pages/Oders'
-import ProductList from "../Component/ProductList";
-import ProductCard from "../Component/ProductCard";
-import Product from "../Admin/Pages/Products_Admin";
 import Deshbord from "../Admin/Pages/DeshbordAdmin";
 import UserAdmin from "../Admin/Pages/User_Admin";
 import FuncOrder from "../Admin/Pages/Oders_Admin";
 import BuyNow from "./BuyNow";
 import Setyouraddress from "./Address";
 import Home from "./Home";
+import CartPage from "./CartPage";
 
 export const MainRoutes = () => {
   return (
@@ -25,6 +23,7 @@ export const MainRoutes = () => {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/cart" element={<CartPage />} />
         <Route path="/products" element={<Products />} />
         <Route path="/products/:pid" element={<SingleProduct />} />
         <Route path="/admindashbord" element={<Deshbord />} />

@@ -1,12 +1,28 @@
 {
-  "cart": [],
+  "cart": [
+    {
+      "id": 1,
+      "name": "Flex Luxury Straight Line Sofa Set In Leatherette",
+      "price": 18999,
+      "mrp": 28999,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_3579a2a7-d150-4b70-8386-90ba042f70da_1800x1800.webp?v=1665507800",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_8d7c4bba-280d-4150-a19d-076c15728ab2_1800x1800.webp?v=1665507815",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_3ceae210-4870-4bdd-a1a3-8dbf6e29df8d_1800x1800.webp?v=1665507826"
+      ],
+      "rating": 3.5,
+      "description": "The color of this sofa adds a touch of boldness to your decor, creating a neutral palette. The plush velvet material is comfortable and cozy on the skin, and the deep seat cushions provide plenty of room to stretch your legs while bringing a different kind of living experience to your living room and den.",
+      "instack": 2,
+      "quantity": 1
+    }
+  ],
   "wishlist": [],
   "data": [
     {
       "id": 1,
       "name": "Flex Luxury Straight Line Sofa Set In Leatherette",
-      "price": 18999.0,
-      "mrp": 28999.0,
+      "price": 18999,
+      "mrp": 28999,
       "images": [
         "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_3579a2a7-d150-4b70-8386-90ba042f70da_1800x1800.webp?v=1665507800",
         "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_8d7c4bba-280d-4150-a19d-076c15728ab2_1800x1800.webp?v=1665507815",
@@ -20,8 +36,8 @@
     {
       "id": 2,
       "name": "Bobran Modern Sofa Set In Suede",
-      "price": 19999.0,
-      "mrp": 28999.0,
+      "price": 19999,
+      "mrp": 28999,
       "images": [
         "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/1-min_da64e53d-7a5c-4800-82cc-ab2e03151b59_5_650x.png?v=1665507435",
         "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/22-min_2cef3387-9e35-4b01-8433-bf4df0befb8c_3_650x.png?v=1665507493",
@@ -35,8 +51,8 @@
     {
       "id": 3,
       "name": "Somervilla Sofa Set In Green Color",
-      "price": 15999.0,
-      "mrp": 28999.0,
+      "price": 15999,
+      "mrp": 28999,
       "images": [
         "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/1-min_d74a7653-3788-4608-9c87-ab0034c5032f_3_650x.png?v=1665508294",
         "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/111-min_f2fc5cd5-8e48-423d-9b1c-1018a82472c0_8_650x.png?v=1665508344",
@@ -50,8 +66,8 @@
     {
       "id": 4,
       "name": "Cosmo Line Chesterfield Sofa Set In Grey",
-      "price": 19999.0,
-      "mrp": 32999.0,
+      "price": 19999,
+      "mrp": 32999,
       "images": [
         "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_52d65c95-3e2e-40c5-9799-4c1713584c6a_650x.jpg?v=1665507692",
         "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_de9e56f5-544b-4034-aa4f-b63649d20347_650x.webp?v=1665507642",
@@ -65,8 +81,8 @@
     {
       "id": 5,
       "name": "Western Luxury Modern Suede Sofa Set In Off White",
-      "price": 31999.0,
-      "mrp": 69999.0,
+      "price": 31999,
+      "mrp": 69999,
       "images": [
         "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_2337370a-d037-4582-b723-dfe190abdecb_650x.webp?v=1665508424",
         "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_7b7a4fba-f951-46c6-9d65-37e09f2d39c3_650x.webp?v=1665508402",
@@ -80,8 +96,8 @@
     {
       "id": 6,
       "name": "Tesla Straight Line Sofa Set In Grey",
-      "price": 21999.0,
-      "mrp": 28999.0,
+      "price": 21999,
+      "mrp": 28999,
       "images": [
         "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_2c945805-0a6a-48e2-8a0d-36f960354278_650x.jpg?v=1665508397",
         "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_ada70d31-01e9-48ab-b197-eeee90a37e16_650x.jpg?v=1665508453",
@@ -95,8 +111,8 @@
     {
       "id": 7,
       "name": "Mono Luxury Modern Suede Sofa Sets In Leatherette",
-      "price": 32999.0,
-      "mrp": 100000.0,
+      "price": 32999,
+      "mrp": 100000,
       "images": [
         "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_f8104786-849f-428c-8aa0-6c71083307eb_650x.webp?v=1665508011",
         "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_864c5fe6-39d2-4573-9f2a-67be5efcfc31_650x.webp?v=1665508042",
@@ -110,8 +126,8 @@
     {
       "id": 8,
       "name": "Rolex Chesterfield Suede Tufted Sofa Set",
-      "price": 19999.0,
-      "mrp": 23999.0,
+      "price": 19999,
+      "mrp": 23999,
       "images": [
         "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_2b1def81-ff62-42a3-821d-9ddc7ad0d3f2_650x.webp?v=1665508204",
         "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_4dd640c9-18f8-42ed-a223-962fd41be3d1_650x.webp?v=1665508244",
@@ -125,8 +141,8 @@
     {
       "id": 9,
       "name": "Hana Luxury Modern Velvet Upholstered Curved Sofa",
-      "price": 31999.0,
-      "mrp": 32999.0,
+      "price": 31999,
+      "mrp": 32999,
       "images": [
         "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/hana-modern-curved-sofa-20_650x.webp?v=1665507830",
         "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/hana-modern-curved-sofa-10_650x.webp?v=1665507877",
@@ -140,8 +156,8 @@
     {
       "id": 10,
       "name": "Jack & Hill Chesterfield Suede Sofa Set",
-      "price": 18999.0,
-      "mrp": 23999.0,
+      "price": 18999,
+      "mrp": 23999,
       "images": [
         "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/0-min_2ddcdfd1-5097-4d18-a019-14bcba23c237_650x.png?v=1665507890",
         "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/90-min_1_650x.png?v=1665507933",
@@ -155,8 +171,8 @@
     {
       "id": 11,
       "name": "Cosco Luxury Modern Suede Sofa Set",
-      "price": 19999.0,
-      "mrp": 49999.0,
+      "price": 19999,
+      "mrp": 49999,
       "images": [
         "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_e8188acd-4fd1-462c-8c0b-1761ea542e18_650x.webp?v=1665765509",
         "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_eed7470d-8fbc-47cb-95ff-ee9f7b90cc03_650x.webp?v=1665765518",
@@ -170,8 +186,8 @@
     {
       "id": 12,
       "name": "Proline Sofa Set With SS Legs",
-      "price": 21999.0,
-      "mrp": 28999.0,
+      "price": 21999,
+      "mrp": 28999,
       "images": [
         "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_91fdbe77-a245-461f-9d82-da4fe13fc237_650x.jpg?v=1665508098",
         "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_f3d42f20-c988-4985-894c-825e8a242348_650x.jpg?v=1665508173",
@@ -185,8 +201,8 @@
     {
       "id": 13,
       "name": "Romeo Chesterfield Sofa Set",
-      "price": 16999.0,
-      "mrp": 23999.0,
+      "price": 16999,
+      "mrp": 23999,
       "images": [
         "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/1-min_de407c8b-81e1-4921-a241-61371c652445_0_650x.png?v=1665508146",
         "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/83-min_17c01dca-7b80-4110-aca5-d648944237a6_2_650x.png?v=1665508186",
@@ -200,8 +216,8 @@
     {
       "id": 14,
       "name": "Dexter Modern Straight Line Chesterfield Sofa Set In Leatherette",
-      "price": 21999.0,
-      "mrp": 23999.0,
+      "price": 21999,
+      "mrp": 23999,
       "images": [
         "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_c709e106-f74d-424c-b3a6-c0ccc47784df_650x.jpg?v=1674323981",
         "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_8ece51aa-4ba5-481e-aa94-1e11d5021d59_650x.jpg?v=1674324020",
@@ -215,8 +231,8 @@
     {
       "id": 15,
       "name": "Blockbox Modern Suede Sofa Sets",
-      "price": 19999.0,
-      "mrp": 28999.0,
+      "price": 19999,
+      "mrp": 28999,
       "images": [
         "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_1bc427a4-418e-47c4-b4fc-e639e92b9327_650x.webp?v=1665507405",
         "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_bc09de97-b04e-489d-aa65-88cc7a9688f2_650x.webp?v=1665507432",
@@ -230,8 +246,8 @@
     {
       "id": 16,
       "name": "Alexa Preimum Modern Sofa Set In Grey Suede",
-      "price": 32999.0,
-      "mrp": 72999.0,
+      "price": 32999,
+      "mrp": 72999,
       "images": [
         "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_f65a52f9-8e26-4035-ba6b-b27a9eb6942c_650x.jpg?v=1674324586",
         "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_e819acde-f36f-4e70-bb6f-0dc371bcc7e8_650x.jpg?v=1674324603",
@@ -245,8 +261,8 @@
     {
       "id": 17,
       "name": "Craftmen Modern Sofa Set In Suede Fabric",
-      "price": 13999.0,
-      "mrp": 28999.0,
+      "price": 13999,
+      "mrp": 28999,
       "images": [
         "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/1-min_cf5eed33-d5fd-4665-b946-18773a425ab8_9_650x.png?v=1665507571",
         "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/232-min_eda9720d-b733-4085-ad7f-ed09b7a19cf2_0_650x.png?v=1665507632",

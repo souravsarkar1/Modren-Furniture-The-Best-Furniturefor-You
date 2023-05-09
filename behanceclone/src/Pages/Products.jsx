@@ -2,7 +2,7 @@ import React from "react";
 import Sidebar from "../Component/Sidebar";
 import { Box, Flex, useBreakpointValue } from "@chakra-ui/react";
 import ProductList from "../Component/ProductList";
-import styles from '../styles/Sidebar.module.css'
+
 function Products() {
   const breackpointsSideBar = useBreakpointValue({
     base: "50%",
@@ -23,7 +23,7 @@ function Products() {
   return (
     <div>
       <Flex>
-        <Box className={styles.sliderCont}  w={breackpointsSideBar}>
+        <Box w={breackpointsSideBar}>
           <Sidebar />
         </Box>
         <Box w={breackpointsProductList}>
