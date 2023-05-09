@@ -50,7 +50,7 @@ const DIV=styled.div`
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 50000;
+    z-index: 80000;
     transform: ${(props)=>props.sideBar? "translateX(0%)":"translateX(-100%)"};
     transition: transform 800ms ease-in-out;
 
