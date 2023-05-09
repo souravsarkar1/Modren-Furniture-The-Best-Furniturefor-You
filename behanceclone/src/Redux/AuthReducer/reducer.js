@@ -6,7 +6,9 @@ const initialState = {
     isAuth: false,
     token: "",
     signupFlag: false,
-    signupFlag2:false
+    signupFlag2:false,
+     addressFlag :false,
+    
 }
 
 export const reducer = (state = initialState, { type, payload }) => {
