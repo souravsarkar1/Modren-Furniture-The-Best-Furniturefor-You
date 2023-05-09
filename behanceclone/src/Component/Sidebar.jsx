@@ -61,9 +61,9 @@ function SideBar() {
     setMax(e.target.value);
   };
   return (
-    <>
+    <Box className={styles.sliderCont}>
       {/* Availablity Filters */}
-      <Box w="90%" m="auto">
+      <Box>
         <Heading size="md">Filter by Availablity</Heading>
         <Box onChange={mannageStack}>
           <input
@@ -251,31 +251,30 @@ function SideBar() {
           />
           <label>Kids Bed</label>
         </Box>
-
-        {/* Price sorting  */}
-        <Box>
-          <Heading size="md">Sort by Price</Heading>
-          <Box onChange={handleOrder}>
-            <input
-              type="radio"
-              name="order"
-              defaultChecked={order === "asc"}
-              value={"asc"}
-            />
-            <label>Ascending</label>
-          </Box>
-          <Box onChange={handleOrder}>
-            <input
-              type="radio"
-              name="order"
-              value={"desc"}
-              defaultChecked={order === "desc"}
-            />
-            <label>Descending</label>
-          </Box>
+      </Box>
+      {/* Price sorting  */}
+      <Box>
+        <Heading size="md">Sort by Price</Heading>
+        <Box onChange={handleOrder}>
+          <input
+            type="radio"
+            name="order"
+            defaultChecked={order === "asc"}
+            value={"asc"}
+          />
+          <label>Ascending</label>
+        </Box>
+        <Box onChange={handleOrder}>
+          <input
+            type="radio"
+            name="order"
+            value={"desc"}
+            defaultChecked={order === "desc"}
+          />
+          <label>Descending</label>
         </Box>
       </Box>
-    </>
+    </Box>
   );
 }
 
