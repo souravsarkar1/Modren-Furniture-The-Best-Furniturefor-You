@@ -71,19 +71,24 @@ const Signup = () => {
 export default Signup
 
 const Div = styled.div`
-height: 100vh;
-width: 100wh;
-margin: 10px;
-padding: 10px;
-//border: 2px solid red;
-background-image: linear-gradient(to right, #2c5aa3, #9c1986);
-display: flex;
- gap: 50px;
-`
+  height: 100vh;
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+  background-image: linear-gradient(to right, #2c5aa3, #9c1986);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+`;
+
+
 const ButtonDiv = styled.div`
-
-
-.googleBtn, .githubBtn {
+  .googleBtn,
+  .githubBtn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -93,97 +98,100 @@ const ButtonDiv = styled.div`
     font-size: 1.2em;
     color: #fff;
     cursor: pointer;
-    width: 600px;
-    margin-left: 15px;
+    width: 100%;
     margin-top: 10px;
     font-size: x-large;
   }
 
   .googleBtn {
-    background-color: #4285F4;
+    background-color: #4285f4;
   }
 
   .githubBtn {
-    background-color: #24292E;
+    background-color: #24292e;
   }
 
-  #googleImg, #githubImg {
+  #googleImg,
+  #githubImg {
     margin-right: 10px;
     border-radius: 50%;
   }
 
-  .googleBtn:hover, .githubBtn:hover {
+  .googleBtn:hover,
+  .githubBtn:hover {
     opacity: 0.8;
   }
+`;
 
-`
-let DIV2 = styled.div`
-#mainHeading{
-    color: ${({ isAuth }) => (isAuth ? 'green' : 'blue')};
-}
-width: 40%;
-//border: 1px solid red;
-margin-top : 30px ;
-height: 700px;
-padding: 10px;
-background-color: white;
-border-radius: 30px;
-h1{
-    color:  black;
-}
-form{
+const DIV2 = styled.div`
+  #mainHeading {
+    color: ${({ isAuth }) => (isAuth ? 'green' : 'red')};
+  }
+  width: 40%;
+  margin-top: 30px;
+  height: 700px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 30px;
+
+  h1 {
+    color: black;
+  }
+
+  form {
     padding: 10px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    input{
-        margin: 20px;
-        padding: 20px;
-        width: 300px;
-       border-radius: 10px;
-       border: none;
-       font-size: large;
-       border: ${({ isError }) => (isError ? '1px solid red' : '1px solid black')};
-    }
-    input:hover{
-        border: 1px solid blue;
-    }
-   button{
-    margin: 30px;
-    padding: 10px;
-    width: 100px;
-    margin: auto;
-    font-size: larger;
-    border-radius: 7px;
-    border: none;
-    background-color: teal;
-    color: white;
-    cursor: pointer;
-   }
-   button:hover{
-    background-color: green;
-   }
-}
-`
-// let DIV = styled.div`
-// width: 50%;
-// //border: 1px solid red;
-// display: flex;
-// justify-content: center;
 
-// img{
-//     width: 50px;
-//     border-radius: 50%;
-//     height: 50px;
+    input {
+      margin: 20px;
+      padding: 20px;
+      width: 100%;
+      max-width: 300px;
+      border-radius: 10px;
+      border: none;
+      font-size: large;
+      border: ${({ isError }) => (isError ? '1px solid red' : '1px solid black')};
+    }
 
-// }
-// `
+    input:hover {
+      border: 1px solid blue;
+    }
+
+    button {
+      margin: 30px auto;
+      padding: 10px;
+      width: 100px;
+      font-size: larger;
+      border-radius: 7px;
+      border: none;
+      background-color: teal;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: green;
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 80%;
+    margin-top: 20px;
+  }
+`;
+
 const Container = styled.div`
   width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const Logo = styled.img`
@@ -200,4 +208,8 @@ const Headin = styled.h1`
   letter-spacing: 0.1em;
   font-weight: bold;
   color: #2b4231;
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
 `;

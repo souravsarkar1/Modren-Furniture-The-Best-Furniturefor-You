@@ -15,6 +15,7 @@ import Product from '../Admin/Pages/Products_Admin';
 import Deshbord from '../Admin/Pages/DeshbordAdmin';
 import UserAdmin from '../Admin/Pages/User_Admin';
 import FuncOrder from '../Admin/Pages/Oders_Admin';
+import BuyNow from './BuyNow';
 
 export const MainRoutes = () => {
   return (
@@ -30,6 +31,7 @@ export const MainRoutes = () => {
         <Route path='/product' element={<Product/>}/>
         <Route path='/productlist' element={<ProductList/>}/>
         <Route path='/productcard' element={<ProductCard/>}/>
+        <Route path='/buynow' element={<BuyNow/>}/>
       </Routes>
     </div>
   );
