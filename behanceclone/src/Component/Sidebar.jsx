@@ -1,17 +1,26 @@
 import React, { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import styled from "styled-components";
-import { Box, Heading } from "@chakra-ui/react";
-//import styles from "../styles/Sidebar.module.css";
+import { Box, Heading, Flex, Text } from "@chakra-ui/react";
+import { AiFillStar } from "react-icons/ai";
+import styles from "../styles/Sidebar.module.css";
 function SideBar() {
   const [searchParams, setSearchParams] = useSearchParams();
+  //get params from url
   const initialCategory = searchParams.getAll("category");
   const initialOrder = searchParams.get("order");
   const initialStack = searchParams.get("stack");
+  const initialRate = searchParams.get("rate");
 
+  // set initial state to params to check the boxes
   const [category, setCategory] = useState(initialCategory || []);
   const [order, setOrder] = useState(initialOrder || "");
   const [stack, setStack] = useState(initialStack || "");
+  const [rate, setRate] = useState(initialRate || "");
+
+  // set mein and max values
+  const [min, setMin] = useState(500);
+  const [max, setMax] = useState(10000);
 
   const handleCategory = (e) => {
     const { value } = e.target;
@@ -28,6 +37,10 @@ function SideBar() {
     const value = e.target.value;
     setOrder(value);
   };
+  const handleRate = (e) => {
+    const value = e.target.value;
+    setRate(value);
+  };
 
   const mannageStack = (e) => {
     const value = e.target.value;
@@ -40,14 +53,18 @@ function SideBar() {
 
     order && (params.order = order);
     stack && (params.stack = stack);
+    rate && (params.rate = rate);
     setSearchParams(params);
-  }, [stack, category, order]);
+  }, [stack, category, order, rate]);
 
+  const handlePriceRange = (e) => {
+    setMax(e.target.value);
+  };
   return (
-    <DIV>
+    <>
       {/* Availablity Filters */}
-      <Box>
-        <Heading size="sm">Filter by Availablity</Heading>
+      <Box w="90%" m="auto">
+        <Heading size="md">Filter by Availablity</Heading>
         <Box onChange={mannageStack}>
           <input
             type="radio"
@@ -67,9 +84,110 @@ function SideBar() {
           <label>Out of Stack</label>
         </Box>
       </Box>
+      {/* inputs */}
+      <Box className={styles.SliderCont}>
+        <Heading mb="10px" size="md">
+          Select Price Range
+        </Heading>
+        <Box w="100%" onChange={handlePriceRange}>
+          <input min="0" value={max} max="200000" step="100" type="range" />
+        </Box>
+        <Flex w="100%" fontWeight={500} justify="space-between">
+          <Text>{`₹${min}`}</Text>
+          <Text>{`₹${max}`}</Text>
+        </Flex>
+        <Flex
+          w="100%"
+          mt="10px"
+          justify="space-between"
+          className={styles.rangeSlider}
+        >
+          <input type="text" value={min} />
+          <input type="text" onChange={handlePriceRange} value={max} />
+        </Flex>
+      </Box>
+      {/* rating sort */}
+      <Box>
+        <Heading size="md">Sort By Rating</Heading>
+        <Flex align="center" gap="5px" onChange={handleRate}>
+          <input
+            type="radio"
+            name="rate"
+            defaultChecked={rate === "5-star"}
+            value={"5-star"}
+          />
+          <label>
+            <Flex>
+              <AiFillStar />
+              <AiFillStar />
+              <AiFillStar />
+              <AiFillStar />
+              <AiFillStar />
+            </Flex>
+          </label>
+        </Flex>
+        <Flex align="center" gap="5px" onChange={handleRate}>
+          <input
+            type="radio"
+            name="rate"
+            defaultChecked={rate === "4-star"}
+            value={"4-star"}
+          />
+          <label>
+            <Flex>
+              <AiFillStar />
+              <AiFillStar />
+              <AiFillStar />
+              <AiFillStar />
+            </Flex>
+          </label>
+        </Flex>
+        <Flex align="center" gap="5px" onChange={handleRate}>
+          <input
+            type="radio"
+            name="rate"
+            defaultChecked={rate === "3-star"}
+            value={"3-star"}
+          />
+          <label>
+            <Flex>
+              <AiFillStar />
+              <AiFillStar />
+              <AiFillStar />
+            </Flex>
+          </label>
+        </Flex>
+        <Flex align="center" gap="5px" onChange={handleRate}>
+          <input
+            type="radio"
+            name="rate"
+            defaultChecked={rate === "2-star"}
+            value={"2-star"}
+          />
+          <label>
+            <Flex>
+              <AiFillStar />
+              <AiFillStar />
+            </Flex>
+          </label>
+        </Flex>
+        <Flex align="center" gap="5px" onChange={handleRate}>
+          <input
+            type="radio"
+            name="rate"
+            defaultChecked={rate === "1-star"}
+            value={"1-star"}
+          />
+          <label>
+            <Flex>
+              <AiFillStar />
+            </Flex>
+          </label>
+        </Flex>
+      </Box>
       {/* Category filters */}
       <Box>
-        <Heading size="sm">Filter by Category</Heading>
+        <Heading size="md">Filter by Category</Heading>
         <Box>
           <input
             type="checkbox"
@@ -133,42 +251,32 @@ function SideBar() {
           />
           <label>Kids Bed</label>
         </Box>
-      </Box>
-      {/* Price sorting  */}
-      <Box>
-        {" "}
-        <Heading size="sm">Sort by Price</Heading>
-        <Box onChange={handleOrder}>
-          <input
-            type="radio"
-            name="order"
-            defaultChecked={order === "asc"}
-            value={"asc"}
-          />
-          <label>Ascending</label>
+
+        {/* Price sorting  */}
+        <Box>
+          <Heading size="md">Sort by Price</Heading>
+          <Box onChange={handleOrder}>
+            <input
+              type="radio"
+              name="order"
+              defaultChecked={order === "asc"}
+              value={"asc"}
+            />
+            <label>Ascending</label>
+          </Box>
+          <Box onChange={handleOrder}>
+            <input
+              type="radio"
+              name="order"
+              value={"desc"}
+              defaultChecked={order === "desc"}
+            />
+            <label>Descending</label>
+          </Box>
         </Box>
-        <Box onChange={handleOrder}>
-          <input
-            type="radio"
-            name="order"
-            value={"desc"}
-            defaultChecked={order === "desc"}
-          />
-          <label>Descending</label>
-        </Box>
       </Box>
-    </DIV>
+    </>
   );
 }
 
 export default SideBar;
-
-const DIV = styled.div`
-  width: 100%;
-
-  div > div {
-    width: 50%;
-    margin: auto;
-    text-align: justify;
-  }
-`;

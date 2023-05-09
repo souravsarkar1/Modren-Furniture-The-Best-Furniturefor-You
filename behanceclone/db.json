@@ -1,6 +1,7 @@
 {
-
-    "data": [
+  "cart": [],
+  "wishlist": [],
+  "data": [
     {
       "id": 1,
       "name": "Flex Luxury Straight Line Sofa Set In Leatherette",
@@ -1188,4 +1189,3 @@
     }
   ]
 }
-

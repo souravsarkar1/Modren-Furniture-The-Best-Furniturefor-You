@@ -1,0 +1,11 @@
+
+.ProductListWrapper {
+    width:95%;
+    margin-left: 20px;
+    padding:10px;
+    justify-content: space-between;
+    position: relative;
+    background-color: white;
+    top:10px;
+    font-weight:500; 
+}

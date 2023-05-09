@@ -1,0 +1,35 @@
+.sliderCont{
+  margin: auto;
+  padding: 20px;
+  border: 1px solid green;
+}
+.sliderCont label {
+    font-weight: 500;
+}
+.sliderCont div > div {
+    width: 50%;
+    margin: auto;
+    text-align: justify;
+  }
+  .sliderCont > div{
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  .sliderCont div:hover{
+    color:orange;
+  }
+  .SliderCont {
+    width:100%;
+  }
+  .SliderCont input {
+    width:100%;
+  }
+  .rangeSlider > input{
+width: 45%;
+border: 1px solid black;
+outline:none;
+font-size: 13px;
+font-weight: 600;
+color:rgb(26, 16, 113);
+padding-left: 10px;
+  }
