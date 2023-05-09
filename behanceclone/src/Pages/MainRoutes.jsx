@@ -17,11 +17,13 @@ import UserAdmin from '../Admin/Pages/User_Admin';
 import FuncOrder from '../Admin/Pages/Oders_Admin';
 import BuyNow from './BuyNow';
 import Setyouraddress from './Address';
+import Home from './Home';
 
 export const MainRoutes = () => {
   return (
     <div>
       <Routes>
+      <Route path='/' element={<Home/>}/>
         <Route path='/login' element={<Login />} />
         <Route path='/signup' element={<Signup />} />
         <Route path='/products' element={<Products />} />
