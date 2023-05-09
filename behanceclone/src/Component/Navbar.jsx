@@ -544,7 +544,7 @@ box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     justify-content: center;
     justify-content: space-around;
     align-items: center;
-   
+    z-index: 5000;
    left: 18%;
    right: 18%;
    top: 60px;
