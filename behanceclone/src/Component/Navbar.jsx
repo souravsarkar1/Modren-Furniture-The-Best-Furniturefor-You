@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Link, NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { AiOutlineSearch, AiOutlineHeart } from 'react-icons/ai';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { FaRegUser } from 'react-icons/fa';

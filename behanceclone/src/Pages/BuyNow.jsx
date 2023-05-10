@@ -11,7 +11,7 @@ import {
   MDBTypography,
 } from "mdb-react-ui-kit";
 import { Button } from "@chakra-ui/react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 
@@ -19,6 +19,7 @@ export default function BuyNow() {
     const isAuth = useSelector(st => st.authReducer.isAuth);
     //const buyNowData = JSON.parse(localStorage.getItem('buy-now-Items')) || [];
    //const data = buyNowData[buyNowData.length-1]
+   const [homeFlag , setHomeFlag] = useState(false);
    const data = {
     img : 'https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_3579a2a7-d150-4b70-8386-90ba042f70da_1800x1800.webp?v=1665507800',
     title : 'Elle Chesterfield Suede Lounger In Blue Color',
@@ -45,6 +46,9 @@ const handleChange = (e) => {
 }
 const setAddressFlag = ()=>{
     return !isAuth;
+}
+if(homeFlag){
+ return <Navigate to={'/'}/>
 }
 const { cardNumber, name, expire, pin } = payment;
 console.log(isAuth);
@@ -205,8 +209,10 @@ const handleSubmit = (e) => {
                         <a href="#!"> obcaecati sapiente</a>.
                       </p>
 
+                      <Button onClick={()=>setHomeFlag(!homeFlag)}>
                       <Button onClick={handleSubmit}>
-                       Complete Your Payment And Order Now
+                      Complete Your Payment And Order Now
+                     </Button>
                       </Button>
 
                       <MDBTypography
