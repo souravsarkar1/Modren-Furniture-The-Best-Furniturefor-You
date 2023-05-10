@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   MDBCard,
   MDBCardBody,
@@ -13,19 +13,31 @@ import {
 import { Button } from "@chakra-ui/react";
 import { Link, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
+import axios from "axios";
 
 
 export default function BuyNow() {
     const isAuth = useSelector(st => st.authReducer.isAuth);
-    //const buyNowData = JSON.parse(localStorage.getItem('buy-now-Items')) || [];
-   //const data = buyNowData[buyNowData.length-1]
-   const data = [{
+    const [CartData, setCartData] = useState([]);
+    useEffect(() => {
+      axios
+        .get(`http://localhost:8080/cart`)
+        .then((res) => {
+          setCartData(res.data);
+          console.log(res.data);
+        });
+    }, []);
+    console.log(CartData);
+   // console.log(CartData[1].images[0]);
+    //const CartData = JSON.parse(localStorage.getItem('buy-now-Items')) || [];
+   //const dh = CartData[CartData.length-1]
+   const data = {
     img : 'https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_3579a2a7-d150-4b70-8386-90ba042f70da_1800x1800.webp?v=1665507800',
-    title : 'abcd',
-    color : 'red',
-    seeling_price : 3434,
-    quantity : 3
-   }]
+    title : 'Jasmine Lounger In Maroon Color',
+    color : 'Green',
+    seeling_price : 19999
+   }
+   //console.log(data.img);
    const [quantity , setQunatity] = useState(1);
    const navigate = useNavigate();
    //const {addressFlag,setAddressFlag} = useContext(isAuth);

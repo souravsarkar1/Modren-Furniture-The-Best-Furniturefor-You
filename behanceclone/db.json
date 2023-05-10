@@ -29,6 +29,21 @@
       "description": "The color of this sofa adds a touch of boldness to your decor, creating a neutral palette. The plush velvet material is comfortable and cozy on the skin, and the deep seat cushions provide plenty of room to stretch your legs while bringing a different kind of living experience to your living room and den.",
       "instack": 4,
       "quantity": 1
+    },
+    {
+      "id": 7,
+      "name": "Mono Luxury Modern Suede Sofa Sets In Leatherette",
+      "price": 32999,
+      "mrp": 100000,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_f8104786-849f-428c-8aa0-6c71083307eb_650x.webp?v=1665508011",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_864c5fe6-39d2-4573-9f2a-67be5efcfc31_650x.webp?v=1665508042",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_25d01c12-6bb9-449a-a788-b81513569500_650x.webp?v=1665508270"
+      ],
+      "rating": 4.2,
+      "description": "Mono Luxury range of sofa set brings impeccable aesthetics and design value to your interiors. It is made with finest fabric and takes hours of craftsmanship before we ship it to our beloved customers.",
+      "instack": 3,
+      "quantity": 1
     }
   ],
   "wishlist": [],

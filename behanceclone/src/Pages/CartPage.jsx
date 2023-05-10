@@ -1,85 +1,70 @@
 import React, { useState, useEffect } from "react";
-import { Container, Text } from "@chakra-ui/react";
-// import "../Admin/Admin.css";
-import '../Admin/Admin.module.css'
+import { Container, Text, Box, Flex, Button} from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 import axios from "axios";
-
-import CartCard from "../Component/ProductCard";
-
-export default function CartPag() {
+import CartCard from "../Component/CartCard";
+export default function CartPage() {
   const [CartData, setCartData] = useState([]);
+  const [cartTotal, SetCartTotal] = useState(0);
+  const [cartDicount, setCartDiscount] = useState(0);
 
-  
+  useEffect(() => {
+    axios
+      .get(`http://localhost:8080/cart`)
+      .then((res) => setCartData(res.data));
+  }, []);
 
-  const data = [
-    {
-      id: 1,
-      name: "Flex Luxury Straight Line Sofa Set In Leatherette",
-      price: 18999.0,
-      mrp: 28999.0,
-      images: [
-        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_3579a2a7-d150-4b70-8386-90ba042f70da_1800x1800.webp?v=1665507800",
-        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_8d7c4bba-280d-4150-a19d-076c15728ab2_1800x1800.webp?v=1665507815",
-        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_3ceae210-4870-4bdd-a1a3-8dbf6e29df8d_1800x1800.webp?v=1665507826",
-      ],
-      rating: 3.5,
-      category: "sofa",
-      description:
-        "The color of this sofa adds a touch of boldness to your decor, creating a neutral palette. The plush velvet material is comfortable and cozy on the skin, and the deep seat cushions provide plenty of room to stretch your legs while bringing a different kind of living experience to your living room and den.",
-      instack: true,
-    },
-    {
-      id: 2,
-      name: "Flex Luxury Straight Line Sofa Set In Leatherette",
-      price: 18999.0,
-      mrp: 28999.0,
-      images: [
-        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_3579a2a7-d150-4b70-8386-90ba042f70da_1800x1800.webp?v=1665507800",
-        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_8d7c4bba-280d-4150-a19d-076c15728ab2_1800x1800.webp?v=1665507815",
-        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_3ceae210-4870-4bdd-a1a3-8dbf6e29df8d_1800x1800.webp?v=1665507826",
-      ],
-      rating: 3.5,
-      category: "sofa",
-      description:
-        "The color of this sofa adds a touch of boldness to your decor, creating a neutral palette. The plush velvet material is comfortable and cozy on the skin, and the deep seat cushions provide plenty of room to stretch your legs while bringing a different kind of living experience to your living room and den.",
-      instack: true,
-    },
-  ];
+  useEffect(() => {
+    let cartprice = 0;
+    let cartmrp = 0;
 
-  const handleIncrea = (id, num) => {
-    console.log("handleIncrea", id, num);
-  };
+    CartData.map((ele) => {
+      cartprice += ele.price * ele.quantity;
+      cartmrp += ele.mrp * ele.quantity;
+    });
+    let carttotaldicount = Math.floor(((cartmrp - cartprice) / cartmrp) * 100);
+    SetCartTotal(cartprice);
+    setCartDiscount(carttotaldicount);
+  }, [CartData]);
 
-  const handleDecre = (id, num) => {
-    console.log("handleDecre");
-  };
-  const handleDelete = (id) => {
-    data.slice(0, id);
-  };
   return (
     <div>
-      <Container maxW="70%" mt="10">
-        <div className="Cart-Dev">
-          <Text fontSize="large" fontWeight={"extrabold"} mr="70%">
-            Shoping Countinue
-          </Text>
-          <Text fontSize="large" fontWeight={"extrabold"} mr="50%" m="4">
-            You have {data.length} itme in you cart
-          </Text>
-          {data.length > 0 &&
-            data.map((el) => {
-              return (
-                <CartCard
-                  {...el}
-                  key={el.id}
-                  handleIncrea={handleIncrea}
-                  handleDecre={handleDecre}
-                  handleDelete={handleDelete}
-                />
-              );
-            })}
-        </div>
-      </Container>
+      <Flex justify="space-between">
+        <Container maxW="60%" mt="10">
+          <Flex
+            p="10px"
+            align="center"
+            justify="space-between"
+            w="100%"
+            m="20px auto"
+            border="1px solid gray"
+          >
+            <Text fontWeight={500} fontSize="20px">
+              You have {CartData.length} Items In your Cart
+            </Text>
+            <Text fontWeight={500} fontSize="20px" color="blue.700">
+              Total Amount: {`${cartTotal}.00`}
+            </Text>
+            <Text fontWeight={500} fontSize="20px">
+              Continue Shopping
+            </Text>
+          </Flex>
+          <div className="Cart-Dev">
+            {CartData.length > 0 &&
+              CartData.map((el) => {
+                return <CartCard {...el} key={el.id} />;
+              })}
+          </div>
+        </Container>
+        <Box w="35%" borderRadius="20px">
+          <Box w="100%" m="58px 10px 20px 10px" border="1px solid gray">
+           <Link to={'/buynow'}>
+           <Button w="90%" m="auto" zIndex={-1}>
+           CHECKOUT
+         </Button></Link>
+          </Box>
+        </Box>
+      </Flex>
     </div>
   );
 }

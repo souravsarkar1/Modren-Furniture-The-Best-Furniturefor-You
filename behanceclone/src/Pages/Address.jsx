@@ -22,7 +22,6 @@ import {
     MdEmail,
     MdLocationOn,
     MdFacebook,
-    MdOutlineEmail,
 } from 'react-icons/md';
 import { BsGithub, BsDiscord, BsPerson } from 'react-icons/bs';
 import { useState } from 'react';
@@ -203,10 +202,7 @@ export default function Setyouraddress() {
                                             <FormControl id="name">
                                                 <FormLabel>Enter Pin</FormLabel>
                                                 <InputGroup borderColor="#E0E1E7">
-                                                    <InputLeftElement
-                                                        pointerEvents="none"
-                                                        children={<MdOutlineEmail color="gray.800" />}
-                                                    />
+                                                   
                                                     <Input type="number" size="md" value={pin} name='pin' onChange={handleChange} />
                                                 </InputGroup>
                                             </FormControl>
