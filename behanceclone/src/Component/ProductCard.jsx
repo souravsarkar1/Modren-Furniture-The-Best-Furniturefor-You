@@ -53,6 +53,7 @@ function ProductCard({
       quantity: 1,
     };
     axios.post(`http://localhost:8080/cart`, newProduct);
+    alert("Product Added to Cart");
   };
 
   const Add_Product_To_WishList = () => {
@@ -67,6 +68,7 @@ function ProductCard({
       instack,
     };
     axios.post(`http://localhost:8080/wishlist`, newProduct);
+    alert("Product Added to WishList");
   };
   return (
     <Box className={styles.CardCont}>

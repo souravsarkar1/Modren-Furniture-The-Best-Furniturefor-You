@@ -17,7 +17,7 @@ function SingleProduct() {
   const { pid } = useParams();
   const dispatch = useDispatch();
   const [product, setProducts] = useState({});
-  const [cartArr, setCartArr] = useState([]);
+  // const [cartArr, setCartArr] = useState([]);
 
   const breackpointsGridView = useBreakpointValue({
     base: "column",
@@ -275,7 +275,7 @@ function SingleProduct() {
               color="white"
               borderRadius="none"
               _hover={{
-                opacity: 0.8,
+                opacity: 0.7,
               }}
             >
               BUY IT NOW

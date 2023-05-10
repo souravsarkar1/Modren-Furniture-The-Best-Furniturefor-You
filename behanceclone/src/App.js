@@ -6,11 +6,13 @@ import Navbar from './Component/Navbar';
 //import Sidebar from './Component/Sidebar';
 import Footer from './Component/Footer';
 import styled from 'styled-components';
+import Sidebar from './Component/SidebarforNav';
 
 function App() {
   return (
     <DIV className="App">
      <Navbar/>
+     <Sidebar/>
       <MainRoutes/>
       <Footer/>
     </DIV>
