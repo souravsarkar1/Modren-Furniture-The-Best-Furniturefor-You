@@ -1,88 +1,119 @@
 import React from "react";
-import {
-  Container,
-  Flex,
-  Box,
-  Spacer,
-  Image,
-  Text,
-  Avatar,
-} from "@chakra-ui/react";
-import "../Admin/Admin.css";
-// import { BsFillCaretDownFill } from "react-icons/bs";
+import { Flex, Box, Image, Text, Button } from "@chakra-ui/react";
+import { BsFire } from "react-icons/bs";
+import { AiFillStar } from "react-icons/ai";
+import { TbTruckDelivery } from "react-icons/tb";
+import moment from "moment";
 export default function CartCard({
   id,
   name,
   price,
+  mrp,
+  rating,
   images,
-  handleIncrea,
-  handleDecre,
-  handleDelete,
+  instack,
+  quantity,
 }) {
+  const save = mrp - price;
+  const discount = Math.ceil((save / mrp) * 100);
+  let color;
+  let avalability;
+  let sold;
+  if (instack > 2) {
+    avalability = `only ${instack} left`;
+    color = "green";
+    sold = instack;
+  } else if (instack <= 2 && instack > 0) {
+    avalability = `only ${instack} left hurry`;
+    color = "red";
+    sold = instack;
+  } else {
+    avalability = `out of stack`;
+    color = "red";
+    sold = 1;
+  }
   return (
-    <>
-      <Container
-        maxW="100%"
-        mb="3"
-        borderRightRadius="10"
-        borderLeftRadius="10"
-        boxShadow="dark-lg"
-        p="6"
-        rounded="md"
-        bg="white"
-      >
-        <Flex>
-          <Box w="700px" h="110">
-            <Flex key={id}>
-              <Image
-                borderRadius="10"
-                ml="15"
-                mr="38"
-                w="100"
-                h="110"
-                src={images}
-                alt={name}
-              />
-              <div>
-                <Text fontWeight={"extrabold"} mt="8">
-                  {name}
-                </Text>
-                <Text fontWeight={"extrabold"}>{price}</Text>
-              </div>
-            </Flex>
-          </Box>
-          <Spacer />
-          <Box w="70px" h="100">
-            <Text>{1}</Text>
-            <button onClick={() => handleIncrea(id)}>
-              <Avatar
-                mt="2"
-                size="sm"
-                src="https://img.icons8.com/?size=512&id=aVM0CHwkTZGB&format=png"
-                alt=""
-              />
-            </button>
-            <button onClick={() => handleDecre(id)}>
-              <Avatar
-                mt="2"
-                size="sm"
-                src="https://img.icons8.com/?size=1x&id=93591&format=png"
-                alt="down"
-              />
-            </button>
-          </Box>
-          <Spacer />
-          <Box w="70px" h="100">
-            <button onClick={() => handleDelete(id)}>
-              <Image
-                mt="5"
-                src="https://img.icons8.com/?size=1x&id=107448&format=png"
-                alt=""
-              />
-            </button>
-          </Box>
+    <Flex
+      // pos="relative"
+      p="15px"
+      borderRadius="15px"
+      border="1px solid gray"
+      mb="20px"
+    >
+      <Box w="30%" mr="10px" h="100%">
+        <img src={images[0]} w="100%" h="100%" alt={`${name} ${id}`} />
+      </Box>
+      <Box w="65%">
+        <Text fontWeight={500} m="0px" p="0px" fontSize="18px">
+          {name}
+        </Text>
+        <Flex p="0" m="0px" fontWeight="500">
+          <Text>
+            <BsFire />
+          </Text>
+          <Text> {sold} sold in last 12 hours</Text>
+          <Text
+            w="130px"
+            ml="10px"
+            borderRadius="3px"
+            textAlign="center"
+            backgroundColor={color}
+            color="white"
+            fontWeight="500"
+          >
+            {avalability}
+          </Text>
         </Flex>
-      </Container>
-    </>
+
+        <Box>
+          <Flex p="0px" gap="6px" align="center" m="0px">
+            <Text fontSize="20px" fontWeight="500">
+              {`Rs.${price}.00`}
+            </Text>
+            <Text color="pink.400" fontSize="15px" fontWeight="500">
+              <strike>{`Rs.${mrp}.00`}</strike>
+            </Text>
+            <Text>{`| save Rs.${save}.00`}</Text>
+            <Text color="red.500">{`(${discount}%)`}</Text>
+          </Flex>
+          <Flex>
+            <TbTruckDelivery size="1.3rem" />
+            <Text>
+              {`Estimated delivery between ${moment().format(
+                "dddd  DD MMMM"
+              )} and  ${moment()
+                .add(Math.random(10), "days")
+                .format("dddd  DD MMMM")}.`}
+            </Text>
+          </Flex>
+          <Flex w="100px" justify="space-between">
+            <Button bgColor="blackAlpha.200" borderRadius="50%">
+              -
+            </Button>
+            <Button bgColor="white" disabled={true}>
+              {quantity}
+            </Button>
+            <Button bgColor="blackAlpha.200" borderRadius="50%">
+              +
+            </Button>
+          </Flex>
+        </Box>
+
+        <Flex align="center">
+          <Flex>
+            {Array(Math.floor(rating))
+              .fill()
+              .map((_, i) => (
+                <Text key={i}>
+                  <AiFillStar />
+                </Text>
+              ))}
+          </Flex>
+          <Button ml="10px" bgColor="red.400" mt="10px">
+            Remove From Cart
+          </Button>
+        </Flex>
+      </Box>
+    </Flex>
   );
 }
