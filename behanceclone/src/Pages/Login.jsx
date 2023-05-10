@@ -23,8 +23,8 @@ const Login = () => {
             navigate(location.state)
         })
         // console.log(email , password);
-        // setEmail('');
-        // setPassword('');
+        setEmail('');
+        setPassword('');
     }
     return (
         <Div className='login'>
@@ -68,7 +68,8 @@ const Login = () => {
 export default Login
 
 const Div = styled.div`
-  height: 100vh;
+
+  height: 120vh;
   width: 100%;
   margin: 10px;
   padding: 10px;
@@ -124,9 +125,10 @@ const DIV2 = styled.div`
   #mainHeading {
     color: ${({ isAuth }) => (isAuth ? 'green' : 'red')};
   }
+  align-items: center;
   width: 40%;
   margin-top: 30px;
-  height: 700px;
+  height: 800px;
   padding: 10px;
   background-color: white;
   border-radius: 30px;

@@ -5,7 +5,7 @@ const bcrypt = require('bcrypt');
 const jwt = require("jsonwebtoken")
 var cookieParser = require('cookie-parser')
 var cors = require('cors')
-const axios = require('axios')
+//const axios = require('axios')
 require("dotenv").config()
 const userRouter = express.Router();
 userRouter.use(cors())
@@ -39,8 +39,21 @@ userRouter.get("/auth/github", async(req, res) => {
 
         }).then((res)=>res.json())
         console.log(accessToken)
-        res.send("Sign in with git hub")
+
+        const user = await fetch("https://api.github.com/user",{
+            headers:{
+                Authorization:`Bearer ${accessToken.access_token}`
+            }
+        }).then((res)=>res.json())
+        .catch((err)=>console.log(err))
+
+        console.log(user)
+
+        res.send("Sign in with git hub")  
         
+        const dbData = new userModel({name:user.name,email:user.email,accessToken:accessToken.access_token})
+        await dbData.save()
+
     } catch (error) {
         res.send(error.message)
     }

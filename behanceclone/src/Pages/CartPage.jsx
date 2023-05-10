@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Container, Text } from "@chakra-ui/react";
-import "../Admin/Admin.css";
+// import "../Admin/Admin.css";
+import '../Admin/Admin.module.css'
 import axios from "axios";
 
-import CartCard from "../Components/ProductCard";
+import CartCard from "../Component/ProductCard";
+
 export default function CartPag() {
   const [CartData, setCartData] = useState([]);
 

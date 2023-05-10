@@ -14,6 +14,21 @@
       "description": "The color of this sofa adds a touch of boldness to your decor, creating a neutral palette. The plush velvet material is comfortable and cozy on the skin, and the deep seat cushions provide plenty of room to stretch your legs while bringing a different kind of living experience to your living room and den.",
       "instack": 2,
       "quantity": 1
+    },
+    {
+      "id": 2,
+      "name": "Bobran Modern Sofa Set In Suede",
+      "price": 19999,
+      "mrp": 28999,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/1-min_da64e53d-7a5c-4800-82cc-ab2e03151b59_5_650x.png?v=1665507435",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/22-min_2cef3387-9e35-4b01-8433-bf4df0befb8c_3_650x.png?v=1665507493",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/0283--min_8_650x.png?v=1665507691"
+      ],
+      "rating": 3.5,
+      "description": "The color of this sofa adds a touch of boldness to your decor, creating a neutral palette. The plush velvet material is comfortable and cozy on the skin, and the deep seat cushions provide plenty of room to stretch your legs while bringing a different kind of living experience to your living room and den.",
+      "instack": 4,
+      "quantity": 1
     }
   ],
   "wishlist": [],

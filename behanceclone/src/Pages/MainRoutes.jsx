@@ -15,6 +15,7 @@ import BuyNow from "./BuyNow";
 import Setyouraddress from "./Address";
 import Home from "./Home";
 import CartPage from "./CartPage";
+import { PrivateRoute } from "../Component/PrivateRoute";
 
 export const MainRoutes = () => {
   return (
@@ -23,14 +24,14 @@ export const MainRoutes = () => {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
-        <Route path="/cart" element={<CartPage />} />
+        <Route path="/cart" element={<PrivateRoute><CartPage/></PrivateRoute>} />
         <Route path="/products" element={<Products />} />
-        <Route path="/products/:pid" element={<SingleProduct />} />
+        <Route path="/products/:pid" element={<PrivateRoute><SingleProduct /></PrivateRoute>} />
         <Route path="/admindashbord" element={<Deshbord />} />
         <Route path="/user" element={<UserAdmin />} />
         <Route path="/order" element={<FuncOrder />} />
-        <Route path="/buynow" element={<BuyNow />} />
-        <Route path="/address" element={<Setyouraddress />} />
+        <Route path="/buynow" element={<PrivateRoute><BuyNow /></PrivateRoute>} />
+        <Route path="/address" element={<PrivateRoute><Setyouraddress /></PrivateRoute>} />
       </Routes>
     </div>
   );

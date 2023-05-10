@@ -57,10 +57,12 @@ const Signup = () => {
                         <img id="googleImg" src={googleLogo} alt="" width={'40px'} />
                         Continue With Google
                     </button>
+                    <a href="https://github.com/login/oauth/authorize?client_id=e943d3a1b6c71a113d3c&scope=user">
                     <button className="githubBtn">
                         <img id="githubImg" src={gitLogo} alt="" width={'40px'} />
                         Continue With GitHub
                     </button>
+                    </a>
                 </ButtonDiv>
             </DIV2>
 
@@ -71,7 +73,7 @@ const Signup = () => {
 export default Signup
 
 const Div = styled.div`
-  height: 100vh;
+  height: 130vh;
   width: 100%;
   margin: 10px;
   padding: 10px;
@@ -129,7 +131,7 @@ const DIV2 = styled.div`
   }
   width: 40%;
   margin-top: 30px;
-  height: 700px;
+  height: 900px;
   padding: 10px;
   background-color: white;
   border-radius: 30px;
