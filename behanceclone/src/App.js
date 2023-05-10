@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import './App.css';
 import Navbar from './Component/Navbar';
 import MainRoutes from './Pages/MainRoutes';
-import Sidebar from './Component/Sidebar';
+import Sidebar from './Component/SidebarforNav'
 import Footer from './Component/Footer';
 
 function App() {
