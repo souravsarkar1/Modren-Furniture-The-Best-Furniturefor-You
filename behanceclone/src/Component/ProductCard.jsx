@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { } from "react";
 import styles from "../styles/ProductCard.module.css";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
@@ -17,7 +17,7 @@ function ProductCard({
   rating,
   instack,
 }) {
-  const [cartData, setcartData] = useState([]);
+ // const [cartData, setcartData] = useState([]);
 
   const save = mrp - price;
   const discount = Math.ceil((save / mrp) * 100);

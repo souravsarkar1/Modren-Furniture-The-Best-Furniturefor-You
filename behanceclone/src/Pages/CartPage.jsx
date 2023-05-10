@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Container, Text } from "@chakra-ui/react";
-import "../Admin/Admin.css";
-import axios from "axios";
+//import "../Admin/Admin.css";
+//import axios from "axios";
 
-import CartCard from "../Components/ProductCard";
+import ProductCard from "../Components/ProductCard";
 export default function CartPag() {
-  const [CartData, setCartData] = useState([]);
+ // const [CartData, setCartData] = useState([]);
 
   
 
@@ -67,7 +67,7 @@ export default function CartPag() {
           {data.length > 0 &&
             data.map((el) => {
               return (
-                <CartCard
+                <ProductCard
                   {...el}
                   key={el.id}
                   handleIncrea={handleIncrea}
