@@ -14,6 +14,36 @@
       "description": "The color of this sofa adds a touch of boldness to your decor, creating a neutral palette. The plush velvet material is comfortable and cozy on the skin, and the deep seat cushions provide plenty of room to stretch your legs while bringing a different kind of living experience to your living room and den.",
       "instack": 2,
       "quantity": 1
+    },
+    {
+      "id": 2,
+      "name": "Bobran Modern Sofa Set In Suede",
+      "price": 19999,
+      "mrp": 28999,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/1-min_da64e53d-7a5c-4800-82cc-ab2e03151b59_5_650x.png?v=1665507435",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/22-min_2cef3387-9e35-4b01-8433-bf4df0befb8c_3_650x.png?v=1665507493",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/0283--min_8_650x.png?v=1665507691"
+      ],
+      "rating": 3.5,
+      "description": "The color of this sofa adds a touch of boldness to your decor, creating a neutral palette. The plush velvet material is comfortable and cozy on the skin, and the deep seat cushions provide plenty of room to stretch your legs while bringing a different kind of living experience to your living room and den.",
+      "instack": 4,
+      "quantity": 1
+    },
+    {
+      "id": 3,
+      "name": "Somervilla Sofa Set In Green Color",
+      "price": 15999,
+      "mrp": 28999,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/1-min_d74a7653-3788-4608-9c87-ab0034c5032f_3_650x.png?v=1665508294",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/111-min_f2fc5cd5-8e48-423d-9b1c-1018a82472c0_8_650x.png?v=1665508344",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/11111-min_7c58ab5d-69c7-4fe2-bbc8-f29eb9b678eb_4_650x.png?v=1665508413"
+      ],
+      "rating": 3.7,
+      "description": "This stylish sofa brings a vintage spin to any living area, combining the retro wide and symmetrical forms with up-to-date comfort and materials. Placed on solid wood legs, it features deep seating surface, thick back cushions and broad armrests. Team up with mid-century furniture and accessories for a complete look. ",
+      "instack": 0,
+      "quantity": 1
     }
   ],
   "wishlist": [],
