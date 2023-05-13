@@ -1,6 +1,23 @@
 {
   "cart": [
     {
+      "id": 8,
+      "name": "Rolex Chesterfield Suede Tufted Sofa Set",
+      "price": 19999,
+      "mrp": 23999,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_2b1def81-ff62-42a3-821d-9ddc7ad0d3f2_650x.webp?v=1665508204",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_4dd640c9-18f8-42ed-a223-962fd41be3d1_650x.webp?v=1665508244",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_08a68f73-353a-463a-9804-e247c0eee85d_50x.webp?v=1665508184"
+      ],
+      "rating": 4.9,
+      "description": "From a morning cup of coffee to entertaining guests, this sofa offers you a place to sit back and relax. Our contemporary style sofa is the ideal addition to any living room with its classic design and traditional elements such as deep button tufting and tuxedo arms. Featuring a low backrest and smooth upholstery, this sofa stands as a streamlined statement piece that can change the whole flow of your living room. Finished with beautifully turned legs, our sofa provides an elegant touch to any room.",
+      "instack": 9,
+      "quantity": 1
+    }
+  ],
+  "wishlist": [
+    {
       "id": 1,
       "name": "Flex Luxury Straight Line Sofa Set In Leatherette",
       "price": 18999,
@@ -12,71 +29,23 @@
       ],
       "rating": 3.5,
       "description": "The color of this sofa adds a touch of boldness to your decor, creating a neutral palette. The plush velvet material is comfortable and cozy on the skin, and the deep seat cushions provide plenty of room to stretch your legs while bringing a different kind of living experience to your living room and den.",
-      "instack": 2,
-      "quantity": 1
+      "instack": 2
     },
     {
-      "id": 2,
-      "name": "Bobran Modern Sofa Set In Suede",
+      "id": 8,
+      "name": "Rolex Chesterfield Suede Tufted Sofa Set",
       "price": 19999,
-      "mrp": 28999,
+      "mrp": 23999,
       "images": [
-        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/1-min_da64e53d-7a5c-4800-82cc-ab2e03151b59_5_650x.png?v=1665507435",
-        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/22-min_2cef3387-9e35-4b01-8433-bf4df0befb8c_3_650x.png?v=1665507493",
-        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/0283--min_8_650x.png?v=1665507691"
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_2b1def81-ff62-42a3-821d-9ddc7ad0d3f2_650x.webp?v=1665508204",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_4dd640c9-18f8-42ed-a223-962fd41be3d1_650x.webp?v=1665508244",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_08a68f73-353a-463a-9804-e247c0eee85d_50x.webp?v=1665508184"
       ],
-      "rating": 3.5,
-      "description": "The color of this sofa adds a touch of boldness to your decor, creating a neutral palette. The plush velvet material is comfortable and cozy on the skin, and the deep seat cushions provide plenty of room to stretch your legs while bringing a different kind of living experience to your living room and den.",
-      "instack": 4,
-      "quantity": 1
-    },
-    {
-      "id": 3,
-      "name": "Somervilla Sofa Set In Green Color",
-      "price": 15999,
-      "mrp": 28999,
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/1-min_d74a7653-3788-4608-9c87-ab0034c5032f_3_650x.png?v=1665508294",
-        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/111-min_f2fc5cd5-8e48-423d-9b1c-1018a82472c0_8_650x.png?v=1665508344",
-        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/11111-min_7c58ab5d-69c7-4fe2-bbc8-f29eb9b678eb_4_650x.png?v=1665508413"
-      ],
-      "rating": 3.7,
-      "description": "This stylish sofa brings a vintage spin to any living area, combining the retro wide and symmetrical forms with up-to-date comfort and materials. Placed on solid wood legs, it features deep seating surface, thick back cushions and broad armrests. Team up with mid-century furniture and accessories for a complete look. ",
-      "instack": 0,
-      "quantity": 1
-    },
-    {
-      "id": 4,
-      "name": "Cosmo Line Chesterfield Sofa Set In Grey",
-      "price": 19999,
-      "mrp": 32999,
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_52d65c95-3e2e-40c5-9799-4c1713584c6a_650x.jpg?v=1665507692",
-        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_de9e56f5-544b-4034-aa4f-b63649d20347_650x.webp?v=1665507642",
-        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_52d65c95-3e2e-40c5-9799-4c1713584c6a_650x.jpg?v=1665507692"
-      ],
-      "rating": 4.2,
-      "description": "The color of this sofa adds a touch of boldness to your decor, creating a neutral palette. The plush velvet material is comfortable and cozy on the skin, and the deep seat cushions provide plenty of room to stretch your legs while bringing a different kind of living experience to your living room and den.",
-      "instack": 2,
-      "quantity": 1
-    },
-    {
-      "id": 21,
-      "name": "Quilt Plus Upholstered Bed With Storage In Brown Finish",
-      "price": 23999,
-      "mrp": 29999,
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/comet-king-size-bed-with-box-storage-in-exotic-teak-finish-by-a-globia-creations-comet-king-size-bed-maz6wd-min_3_1800x1800.png?v=1661584916",
-        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/comet-king-size-bed-with-box-storage-in-exotic-teak-finish-by-a-globia-creations-comet-king-size-bed-nt8hyp-min_6_650x.png?v=1661584924",
-        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/comet-king-size-bed-with-box-storage-in-exotic-teak-finish-by-a-globia-creations-comet-king-size-bed-n9x9fg-min_2_1800x1800.png?v=1661584944"
-      ],
-      "rating": 4.2,
-      "description": "Nice Maple offers the best in comfort with elan. The collections are a series of modern trendy designs, simple yet striking and represent the ideals of minimalism. The designs are a perfect blend of functionality and exceptional aesthetics. Each piece is crafted with passion and follows international standards on quality and style.",
-      "instack": 9,
-      "quantity": 1
+      "rating": 4.9,
+      "description": "From a morning cup of coffee to entertaining guests, this sofa offers you a place to sit back and relax. Our contemporary style sofa is the ideal addition to any living room with its classic design and traditional elements such as deep button tufting and tuxedo arms. Featuring a low backrest and smooth upholstery, this sofa stands as a streamlined statement piece that can change the whole flow of your living room. Finished with beautifully turned legs, our sofa provides an elegant touch to any room.",
+      "instack": 9
     }
   ],
-  "wishlist": [],
   "data": [
     {
       "id": 1,

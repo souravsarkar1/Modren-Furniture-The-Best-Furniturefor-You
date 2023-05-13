@@ -30,7 +30,7 @@ export const MainRoutes = () => {
         <Route path="/admindashbord" element={<Deshbord />} />
         <Route path="/user" element={<UserAdmin />} />
         <Route path="/order" element={<FuncOrder />} />
-        <Route path="/buynow" element={<PrivateRoute><BuyNow /></PrivateRoute>} />
+        <Route path="/checkout" element={<PrivateRoute><BuyNow /></PrivateRoute>} />
         <Route path="/address" element={<PrivateRoute><Setyouraddress /></PrivateRoute>} />
       </Routes>
     </div>

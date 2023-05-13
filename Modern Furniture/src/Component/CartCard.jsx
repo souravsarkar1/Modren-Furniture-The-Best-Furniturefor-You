@@ -1,8 +1,9 @@
-import React from "react";
-import { Flex, Box, Image, Text, Button } from "@chakra-ui/react";
+import React, { useState, useEffect } from "react";
+import { Flex, Box, Text, Button } from "@chakra-ui/react";
 import { BsFire } from "react-icons/bs";
 import { AiFillStar } from "react-icons/ai";
 import { TbTruckDelivery } from "react-icons/tb";
+
 import moment from "moment";
 export default function CartCard({
   id,
@@ -13,7 +14,16 @@ export default function CartCard({
   images,
   instack,
   quantity,
+  handleDec,
+  handleInc,
+  hndleDelete,
 }) {
+  const [QTY, setQTY] = useState(quantity);
+  const handelDecreamentQTY = () => {
+    handleDec(id, quantity);
+    setQTY((pre) => pre - 1);
+  };
+
   const save = mrp - price;
   const discount = Math.ceil((save / mrp) * 100);
   let color;
@@ -32,6 +42,7 @@ export default function CartCard({
     color = "red";
     sold = 1;
   }
+
   return (
     <Flex
       // pos="relative"
@@ -39,6 +50,7 @@ export default function CartCard({
       borderRadius="15px"
       border="1px solid gray"
       mb="20px"
+      align="center"
     >
       <Box w="30%" mr="10px" h="100%">
         <img src={images[0]} w="100%" h="100%" alt={`${name} ${id}`} />
@@ -67,13 +79,19 @@ export default function CartCard({
 
         <Box>
           <Flex p="0px" gap="6px" align="center" m="0px">
-            <Text fontSize="20px" fontWeight="500">
+            <Text p="0px" gap="6px" fontSize="20px" fontWeight="500">
               {`Rs.${price}.00`}
             </Text>
-            <Text color="pink.400" fontSize="15px" fontWeight="500">
+            <Text
+              p="0px"
+              gap="6px"
+              color="pink.400"
+              fontSize="15px"
+              fontWeight="500"
+            >
               <strike>{`Rs.${mrp}.00`}</strike>
             </Text>
-            <Text>{`| save Rs.${save}.00`}</Text>
+            <Text p="0px" gap="6px">{`| save Rs.${save}.00`}</Text>
             <Text color="red.500">{`(${discount}%)`}</Text>
           </Flex>
           <Flex>
@@ -81,20 +99,39 @@ export default function CartCard({
             <Text>
               {`Estimated delivery between ${moment().format(
                 "dddd  DD MMMM"
-              )} and  ${moment()
-                .add(Math.random(10), "days")
-                .format("dddd  DD MMMM")}.`}
+              )} and  ${moment().add(10, "days").format("dddd  DD MMMM")}.`}
             </Text>
           </Flex>
-          <Flex w="100px" justify="space-between">
-            <Button bgColor="blackAlpha.200" borderRadius="50%">
-              -
-            </Button>
-            <Button bgColor="white" disabled={true}>
-              {quantity}
-            </Button>
-            <Button bgColor="blackAlpha.200" borderRadius="50%">
-              +
+          <Flex justify="space-between">
+            <Flex w="100px" justify="space-between">
+              <Button
+                disabled={QTY <= 1}
+                onClick={handelDecreamentQTY}
+                size="sm"
+                bgColor="blackAlpha.200"
+                borderRadius="50%"
+              >
+                -
+              </Button>
+              <Button size="sm" bgColor="white" disabled={true}>
+                {quantity}
+              </Button>
+              <Button
+                onClick={() => handleInc(id, quantity)}
+                size="sm"
+                bgColor="blackAlpha.200"
+                borderRadius="50%"
+              >
+                +
+              </Button>
+            </Flex>
+            <Button
+              onClick={() => hndleDelete(id)}
+              size="xs"
+              ml="10px"
+              bgColor="red.400"
+            >
+              Remove From Cart
             </Button>
           </Flex>
         </Box>
@@ -109,9 +146,6 @@ export default function CartCard({
                 </Text>
               ))}
           </Flex>
-          <Button ml="10px" bgColor="red.400" mt="10px">
-            Remove From Cart
-          </Button>
         </Flex>
       </Box>
     </Flex>

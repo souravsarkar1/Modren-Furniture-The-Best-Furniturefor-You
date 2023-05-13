@@ -81,7 +81,7 @@ userRouter.post("/login", async (req, res) => {
         // console.log(cookieToken)
         res.send({ msg: "loggin Succeful", token })
 
-        res.sendFile(__dirname + "/behanceclone/src/Pages/Login.jsx")
+      //  res.sendFile(__dirname + "/onerous-ants-4416/Modern Furniture/src/Pages/Login.jsx")
 
     } catch (error) {
         res.send(error.message)
