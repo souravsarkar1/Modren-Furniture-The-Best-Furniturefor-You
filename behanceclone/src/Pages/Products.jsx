@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import Sidebar from "../Component/Sidebar";
 import { Box, Flex, useBreakpointValue } from "@chakra-ui/react";
 import ProductList from "../Component/ProductList";
 
 function Products() {
+  const [rate, setRate] = useState(null);
+  const handleRate = (e) => {
+    const value = e.target.value;
+    setRate(value);
+  };
+
   const breackpointsSideBar = useBreakpointValue({
     base: "50%",
     sm: "40%",
@@ -24,10 +30,10 @@ function Products() {
     <div>
       <Flex>
         <Box w={breackpointsSideBar}>
-          <Sidebar />
+          <Sidebar handleRate={handleRate} />
         </Box>
         <Box w={breackpointsProductList}>
-          <ProductList />
+          <ProductList rate={rate} />
         </Box>
       </Flex>
     </div>

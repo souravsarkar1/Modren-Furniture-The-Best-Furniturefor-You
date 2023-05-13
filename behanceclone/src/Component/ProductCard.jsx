@@ -5,7 +5,8 @@ import { useNavigate } from "react-router-dom";
 import { AiFillStar } from "react-icons/ai";
 import { AiOutlineHeart, AiOutlineZoomIn } from "react-icons/ai";
 import { HiOutlineShoppingCart } from "react-icons/hi";
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { Box, Text, Button, Flex } from "@chakra-ui/react";
 function ProductCard({
   id,
@@ -17,7 +18,7 @@ function ProductCard({
   rating,
   instack,
 }) {
-  const [cartData, setcartData] = useState([]);
+  
 
   const save = mrp - price;
   const discount = Math.ceil((save / mrp) * 100);
@@ -52,7 +53,11 @@ function ProductCard({
       instack,
       quantity: 1,
     };
-    axios.post(`http://localhost:8080/cart`, newProduct);
+
+    axios
+      .post(`http://localhost:8080/cart`, newProduct)
+      .then(() => toast.success("Product Added To Cart"))
+      .catch(() => toast.warning("Product Already In Cart"));
   };
 
   const Add_Product_To_WishList = () => {
@@ -66,7 +71,10 @@ function ProductCard({
       description,
       instack,
     };
-    axios.post(`http://localhost:8080/wishlist`, newProduct);
+    axios
+      .post(`http://localhost:8080/wishlist`, newProduct)
+      .then(() => toast.success("Product Added To Wishlist"))
+      .catch(() => toast.warning("Product Already In Wishlistart"));
   };
   return (
     <Box className={styles.CardCont}>
@@ -138,6 +146,19 @@ function ProductCard({
             ))}
         </Flex>
       </Box>
+      <ToastContainer
+        position="top-center"
+        autoClose={1000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+        style={{ borderRadius: 0, boxShadow: "none" }}
+      />
     </Box>
   );
 }

@@ -92,9 +92,17 @@ function SideBar() {
         <Box w="100%" onChange={handlePriceRange}>
           <input min="0" value={max} max="200000" step="100" type="range" />
         </Box>
-        <Flex w="100%" fontWeight={500} justify="space-between">
-          <Text>{`₹${min}`}</Text>
-          <Text>{`₹${max}`}</Text>
+        <Flex m="0px" p="0px" w="100%" fontWeight={500} justify="space-between">
+          <Text m="0px" p="0px">{`₹${min}`}</Text>
+          <Text m="0px" p="0px">{`₹${max}`}</Text>
+        </Flex>
+        <Flex m="0px" p="0px" w="100%" fontWeight={500} justify="space-between">
+          <Text m="0px" p="0px 5px">
+            Min
+          </Text>
+          <Text m="0px" p="0px 5px">
+            Max
+          </Text>
         </Flex>
         <Flex
           w="100%"
@@ -262,7 +270,7 @@ function SideBar() {
             defaultChecked={order === "asc"}
             value={"asc"}
           />
-          <label>Ascending</label>
+          <label>Low To High</label>
         </Box>
         <Box onChange={handleOrder}>
           <input
@@ -271,7 +279,7 @@ function SideBar() {
             value={"desc"}
             defaultChecked={order === "desc"}
           />
-          <label>Descending</label>
+          <label>High To Low</label>
         </Box>
       </Box>
     </Box>

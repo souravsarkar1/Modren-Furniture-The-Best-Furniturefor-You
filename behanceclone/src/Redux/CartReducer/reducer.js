@@ -7,7 +7,7 @@ const initialState = {
 export const reducer = (state = initialState, { type, payload }) => {
   switch (type) {
     case ADD_TO_CART: {
-      return { ...state, cart: payload };
+      return { ...state, payload };
     }
     case REMOVE_FROM_CART: {
       return { ...state, cart: payload };
