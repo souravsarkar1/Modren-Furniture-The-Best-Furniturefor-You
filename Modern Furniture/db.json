@@ -14,6 +14,21 @@
       "description": "From a morning cup of coffee to entertaining guests, this sofa offers you a place to sit back and relax. Our contemporary style sofa is the ideal addition to any living room with its classic design and traditional elements such as deep button tufting and tuxedo arms. Featuring a low backrest and smooth upholstery, this sofa stands as a streamlined statement piece that can change the whole flow of your living room. Finished with beautifully turned legs, our sofa provides an elegant touch to any room.",
       "instack": 9,
       "quantity": 1
+    },
+    {
+      "id": 1,
+      "name": "Flex Luxury Straight Line Sofa Set In Leatherette",
+      "price": 18999,
+      "mrp": 28999,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_3579a2a7-d150-4b70-8386-90ba042f70da_1800x1800.webp?v=1665507800",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_8d7c4bba-280d-4150-a19d-076c15728ab2_1800x1800.webp?v=1665507815",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_3ceae210-4870-4bdd-a1a3-8dbf6e29df8d_1800x1800.webp?v=1665507826"
+      ],
+      "rating": 3.5,
+      "description": "The color of this sofa adds a touch of boldness to your decor, creating a neutral palette. The plush velvet material is comfortable and cozy on the skin, and the deep seat cushions provide plenty of room to stretch your legs while bringing a different kind of living experience to your living room and den.",
+      "instack": 2,
+      "quantity": 1
     }
   ],
   "wishlist": [
@@ -44,6 +59,20 @@
       "rating": 4.9,
       "description": "From a morning cup of coffee to entertaining guests, this sofa offers you a place to sit back and relax. Our contemporary style sofa is the ideal addition to any living room with its classic design and traditional elements such as deep button tufting and tuxedo arms. Featuring a low backrest and smooth upholstery, this sofa stands as a streamlined statement piece that can change the whole flow of your living room. Finished with beautifully turned legs, our sofa provides an elegant touch to any room.",
       "instack": 9
+    },
+    {
+      "id": 14,
+      "name": "Dexter Modern Straight Line Chesterfield Sofa Set In Leatherette",
+      "price": 21999,
+      "mrp": 23999,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_c709e106-f74d-424c-b3a6-c0ccc47784df_650x.jpg?v=1674323981",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_8ece51aa-4ba5-481e-aa94-1e11d5021d59_650x.jpg?v=1674324020",
+        "https://cdn.shopify.com/s/files/1/0617/5549/0489/products/image_a71dc216-7600-4945-b062-ebe42543199f_650x.jpg?v=1674324034"
+      ],
+      "rating": 3.5,
+      "description": "The color of this sofa adds a touch of boldness to your decor, creating a neutral palette. The plush velvet material is comfortable and cozy on the skin, and the deep seat cushions provide plenty of room to stretch your legs while bringing a different kind of living experience to your living room and den.",
+      "instack": 7
     }
   ],
   "data": [

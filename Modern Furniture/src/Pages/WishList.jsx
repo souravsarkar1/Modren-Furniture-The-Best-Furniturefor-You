@@ -14,7 +14,7 @@ import {
 import { Link} from "react-router-dom";
 import axios from "axios";
 import CartCard from "../Component/CartCard";
-export default function CartPage() {
+export default function WishList() {
   //const navigate = useNavigate();
   const [CartData, setCartData] = useState([]);
   const [cartTotal, SetCartTotal] = useState(0);
@@ -25,27 +25,27 @@ export default function CartPage() {
   const handleInc = (id, quantity) => {
     setChange(!change);
     axios
-      .patch(`http://localhost:8080/cart/${id}`, { quantity: quantity + 1 })
+      .patch(`http://localhost:8080/wishlist/${id}`, { quantity: quantity + 1 })
       .then(() => setChange(!change));
   };
   const handleDec = (id, quantity) => {
     axios
-      .patch(`http://localhost:8080/cart/${id}`, { quantity: quantity - 1 })
+      .patch(`http://localhost:8080/wishlist/${id}`, { quantity: quantity - 1 })
       .then(() => setChange(!change));
   };
   const hndleDelete = (id) => {
     axios
-      .delete(`http://localhost:8080/cart/${id}`)
+      .delete(`http://localhost:8080/wishlist/${id}`)
       .then(() => setChange(!change));
     <Alert status="error">
       <AlertIcon />
-      <AlertTitle>Product Removed From Cart</AlertTitle>
+      <AlertTitle>Product Removed From Wish List</AlertTitle>
     </Alert>;
   };
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8080/cart`)
+      .get(` http://localhost:8080/wishlist`)
       .then((res) => setCartData(res.data));
   }, [change]);
 
@@ -119,7 +119,7 @@ export default function CartPage() {
             border="1px solid gray"
           >
             <Text fontWeight={500} fontSize="20px">
-              You have {CartData.length} Items In your Cart
+              You have {CartData.length} Items In your WishList
             </Text>
             <Text fontWeight={500} fontSize="20px" color="blue.700">
               Total Amount: {`₹${cartTotal}.00`}

@@ -29,9 +29,13 @@ import { useState } from 'react';
 import axios from 'axios';
 //import { Authcontext } from '../Authcontext/Authcontextprovider';
 import { Navigate } from 'react-router-dom';
-import { useSelector } from 'react-redux';
+//import { useSelector } from 'react-redux';
+//import { setAddressFlagTrue } from '../Redux/PaymentReducer/action';
 
 export default function Setyouraddress() {
+    //const {addressFlag} = useSelector(st=>st.paymentReducer);
+    const [addressFlag , setAddressFlag] = useState(false);
+    console.log(addressFlag);
     const dieselAddress = JSON.parse(localStorage.getItem('dieselAddress')) || [];
     const [address, setAddress] = useState({
         fullAddress: '',
@@ -40,7 +44,7 @@ export default function Setyouraddress() {
         pin: ''
     });
 
-    const addressFlag = useSelector(st => st.authReducer.addressFlag);
+   // const addressFlag = useSelector(st => st.authReducer.addressFlag);
     console.log(addressFlag);
     const handleChange = (e) => {
         const { name, value, type } = e.target;
@@ -49,9 +53,7 @@ export default function Setyouraddress() {
         const val = type === "number" ? Number(value) : value;
         setAddress({ ...address, [name]: val })
     }
-    const setAddressFlag = () => {
-        return !addressFlag;
-    }
+    
     const { fullAddress, name, phonenumber, pin } = address;
     const userAddress = (data = { name: '', email: '', message: '' }) => {
         return axios(
@@ -68,7 +70,7 @@ export default function Setyouraddress() {
         dieselAddress.push(address);
         localStorage.setItem('dieselAddress', JSON.stringify(dieselAddress))
         userAddress(address);
-        setAddressFlag();
+        setAddressFlag(true);
         console.log('Ratna');
         setAddress({
             fullAddress: '',
@@ -78,7 +80,7 @@ export default function Setyouraddress() {
         });
     }
     if (addressFlag) {
-        return <Navigate to='/buynow' />
+        return <Navigate to='/checkout' />
     }
     return (
         <Container bg="#9DC4FB" maxW="full" mt={0} centerContent overflow="hidden">

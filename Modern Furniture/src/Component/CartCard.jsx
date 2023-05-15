@@ -131,7 +131,7 @@ export default function CartCard({
               ml="10px"
               bgColor="red.400"
             >
-              Remove From Cart
+              Remove From Product
             </Button>
           </Flex>
         </Box>

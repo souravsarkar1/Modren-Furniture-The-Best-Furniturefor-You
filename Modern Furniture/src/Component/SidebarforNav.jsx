@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import styled from 'styled-components'
 import { RxCross2 } from 'react-icons/rx'
 import { sidebartogel } from '../Redux/scrollReducer/action'
+import { Link } from 'react-router-dom'
 
 const Sidebar = () => {
     const sideBar=useSelector((store)=>store.ScrollReducer.sidebarTogel)
@@ -21,21 +22,21 @@ const handleCross=()=>{
          <span className='spanOfcross' onClick={handleCross} ><RxCross2 className='cross'/></span>
         </div>
       <ul>
-        <li>LIVING ROOM</li>
+        <li><Link to={'/products'}>LIVING ROOM</Link></li>
         <hr />
-        <li>BEDROOM</li>
+        <Link to={'/'}><li>BEDROOM</li></Link>
         <hr />
-        <li>DINNING ROOM</li>
+        <Link to={'/'}><li>DINNING ROOM</li></Link>
         <hr />
-        <li>STUDY ROOM</li>
+       <Link to={'/'}> <li>STUDY ROOM</li></Link>
         <hr />
-        <li>CLERANCE SALE</li>
+       <Link to={'/'}> <li>CLERANCE SALE</li></Link>
         <hr />
-        <li>LOGIN</li>
+        <Link to={'/login'}><li>LOGIN</li></Link>
         <hr />
-        <li>REGISTER NOW</li>
+       <Link to={'/signup'}> <li>REGISTER NOW</li></Link>
         <hr />
-        <li>WISH LIST</li>
+        <Link to={'/wishList'}><li>WISH LIST</li></Link>
       </ul>
     </DIV>
   )

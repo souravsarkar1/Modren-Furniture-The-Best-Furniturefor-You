@@ -14,8 +14,9 @@ import { Button } from "@chakra-ui/react";
 import { Link, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import axios from "axios";
-
+import { Navigate } from 'react-router-dom';
 export default function BuyNow() {
+  const [paymentFlag , setPaymentFlag] = useState(false);
   const isAuth = useSelector((st) => st.authReducer.isAuth);
   //const buyNowData = JSON.parse(localStorage.getItem('buy-now-Items')) || [];
   //const data = buyNowData[buyNowData.length-1]
@@ -57,6 +58,7 @@ export default function BuyNow() {
   //const {addressFlag,setAddressFlag} = useContext(isAuth);
   const [payment, setPayment] = useState({
     cardNumber: "",
+    mobileNumber: "",
     name: "",
     expire: "",
     pin: "",
@@ -73,7 +75,7 @@ export default function BuyNow() {
   const setAddressFlag = () => {
     return !isAuth;
   };
-  const { cardNumber, name, expire, pin } = payment;
+  const { cardNumber, name, expire, pin, mobileNumber } = payment;
   console.log(isAuth);
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -88,10 +90,16 @@ export default function BuyNow() {
         name: "",
         expire: "",
         pin: "",
+        mobileNumber: ""
       });
+     
       alert("Your Order is Successfull");
     }
   };
+  console.log(paymentFlag);
+  if(paymentFlag){
+    return <Navigate to={'/'}/>
+  }
   return (
     <section className="h-100 h-custom" style={{ backgroundColor: "#eee" }}>
       <MDBContainer className="h-100 py-5">
@@ -257,20 +265,32 @@ export default function BuyNow() {
                     </MDBTypography>
 
                     <form className="mb-5">
+                      <label htmlFor="">Card Number</label>
                       <MDBInput
                         className="mb-5"
-                        label="Card number"
                         type="number"
                         size="lg"
                         placeholder="1234 5678 9012 3457"
                         value={cardNumber}
                         name="cardNumber"
+                        maxLength={16}
                         onChange={handleChange}
                       />
-
+                      <label htmlFor="">Mobile Number</label>
                       <MDBInput
                         className="mb-5"
-                        label="Name on card"
+                        type="tel"
+                        size="lg"
+                        placeholder="98760543210"
+                        value={mobileNumber}
+                        name="mobileNumber"
+                        maxLength={10}
+                        onChange={handleChange}
+                      />
+                      <label htmlFor="">Name on card</label>
+                      <MDBInput
+                        className="mb-5"
+
                         type="text"
                         size="lg"
                         defaultValue="John Smith"
@@ -280,11 +300,13 @@ export default function BuyNow() {
                       />
 
                       <MDBRow>
+
                         <MDBCol md="6" className="mb-5">
+                          <label htmlFor="">Expiration</label>
                           <MDBInput
                             className="mb-4"
-                            label="Expiration"
-                            type="text"
+
+                           type="date"
                             size="lg"
                             minLength="7"
                             maxLength="7"
@@ -294,9 +316,10 @@ export default function BuyNow() {
                           />
                         </MDBCol>
                         <MDBCol md="6" className="mb-5">
+                          <label htmlFor="">CVV</label>
                           <MDBInput
                             className="mb-4"
-                            label="Cvv"
+
                             type="text"
                             size="lg"
                             minLength="3"

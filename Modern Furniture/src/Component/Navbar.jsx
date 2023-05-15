@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import { AiOutlineSearch, AiOutlineHeart } from 'react-icons/ai';
@@ -15,6 +15,12 @@ const Navbar = () => {
     const dispatch = useDispatch();
 
 
+
+    const [isSearchVisible, setIsSearchVisible] = useState(false);
+
+    const handleSearchClick = () => {
+        setIsSearchVisible(!isSearchVisible);
+    };
 
     const handleTogle = () => {
         if (sideBar === true) {
@@ -36,8 +42,8 @@ const Navbar = () => {
             </nav>
             <div className='nav_desktop'  >
                 <Link to={'/'}><div className="logo">
-                <img src="https://drive.google.com/uc?export=view&id=1MpB51tW-iAud2R23s5vmcVKtlMDBN2An" alt="logo" className="imageOflogo" />
-            </div></Link>
+                    <img src="https://drive.google.com/uc?export=view&id=1MpB51tW-iAud2R23s5vmcVKtlMDBN2An" alt="logo" className="imageOflogo" />
+                </div></Link>
 
                 <div className="navSection" >
 
@@ -219,11 +225,18 @@ const Navbar = () => {
                 </div>
 
                 <div className='navIcons'>
-                    <AiOutlineSearch />
-                   <Link to={'/login'}> <FaRegUser /></Link>
-                    <AiOutlineHeart />
-                   <Link to={'/cart'}> <GiShoppingCart className='giIcon' /></Link>
+                    <AiOutlineSearch onClick={handleSearchClick} />
+                    <Link to={'/login'}>
+                        <FaRegUser />
+                    </Link>
+                   <Link to={'/wishlist'}> <AiOutlineHeart /></Link>
+                    <Link to={'/cart'}>
+                        <GiShoppingCart className='giIcon' />
+                    </Link>
 
+                    {isSearchVisible && (
+                        <input type='text' placeholder='Search' />
+                    )}
                 </div>
 
             </div>
@@ -415,9 +428,9 @@ const Navbar = () => {
 
                 <div className='navIcons'>
                     <AiOutlineSearch />
-                   <Link to={'/login'}> <FaRegUser /></Link>
+                    <Link to={'/login'}> <FaRegUser /></Link>
                     <AiOutlineHeart />
-                   <Link to={'/cart'}> <GiShoppingCart className='giIcon' /></Link>
+                    <Link to={'/cart'}> <GiShoppingCart className='giIcon' /></Link>
 
                 </div>
 
@@ -439,8 +452,8 @@ const Navbar = () => {
                     <img className='imgOfphoneLogoNav' src="https://drive.google.com/uc?export=view&id=1MpB51tW-iAud2R23s5vmcVKtlMDBN2An" alt="" />
                 </div>
                 <div className='rightsideOfNavbar'>
-                <Link to={'/login'}> <FaRegUser /></Link>
-                <Link to={'/cart'}> <GiShoppingCart className='giIcon' /></Link>
+                    <Link to={'/login'}> <FaRegUser /></Link>
+                    <Link to={'/cart'}> <GiShoppingCart className='giIcon' /></Link>
                 </div>
             </nav>
             <nav className='downDiv1 downDiv2' style={{ transform: downnav ? "translateY(0%)" : "translateY(-100%)", opacity: downnav ? 100 : 0 }}>
