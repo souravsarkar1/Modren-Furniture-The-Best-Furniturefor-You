@@ -1,44 +1,94 @@
-# Project Name `Modern_Furniture`
+# Getting Started with Create React App
 
-Modern_Furniture is a web application that aims to replicate some of the core features and functionalities of the popular design showcase platform, Behance. It provides a platform for designers, artists, and creatives to showcase their portfolio, discover inspiring work from others, and connect with like-minded individuals.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Key Features
+## Available Scripts
 
-- **User Registration and Authentication**: Users can create an account, log in, and manage their profile.
-- **Project Showcase**: The application allows users to showcase their projects with high-quality images, videos, and other media formats.
-- **Browse and Discover**: Users can explore and discover a wide range of projects from various categories and filter them based on popularity, date, and other criteria.
-- **Liking and Commenting**: Users can like and comment on projects to show appreciation, provide feedback, or engage in discussions with the creators and other users.
-- **Following and Messaging**: Users can follow other users whose work they admire and send direct messages to establish connections and collaborations.
-- **Responsive Design**: The website is designed to be fully responsive, ensuring optimal user experience across different devices and screen sizes.
-## Table of Contents
+In the project directory, you can run:
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Features](#features)
-- [Contributing](#contributing)
-- [License](#license)
+### `npm start`
 
-## Installation
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-1. Clone the repository.
-2. Navigate to the project directory.
-3. Install the dependencies by running the following command:
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
+### `npm test`
 
-### to run the back end run
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-`npm run server`
+### `npm run build`
 
-### befrore run the back end make sure your 3004 port is free
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-### to run the front end run
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-`npm run start`
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-#### to run the the product server run
+### `npm run eject`
 
-open the behanceclone in the terminal and run `npm run server`
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-### fully responsive website
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Home Page
+![Sample Image](https://drive.google.com/uc?export=view&id=1nvo49FbeROdpMU7hTswQqNEbF3tWa4xi)
+
+### Mobile View
+![Sample Image](https://drive.google.com/uc?export=view&id=1F4GsFTjiyqKRhlbIO8MJ8qoVykB7ZkvH)
+### Mobile Side Bar
+![Sample Image](https://drive.google.com/uc?export=view&id=1eoSbdX3XHgy8l7BTuRoAY3CLh5N_dDO0)
+### Login Page
+![Sample Image](https://drive.google.com/uc?export=view&id=1Fr1elc6EEY2MQKT0oVBGFZZwvgLi1Bm-)
+
+### product Page
+![Sample Image](https://drive.google.com/uc?export=view&id=1rEyrAUUhFmOnmpoNosnVwNk-UjilXN8t)
+
+### Single Product Page
+![Sample Image](https://drive.google.com/uc?export=view&id=1xF0IYy9Pz58hZqdKQa9VZ08bRhm28xtw)
+
+### Cart Page
+ ![Sample Image](https://drive.google.com/uc?export=view&id=1feD5YzwLAhlrviMNMvZn3klai6Hb5Rg3)
+
+### check out
+![Sample Image](https://drive.google.com/uc?export=view&id=1QfnS6jdTsyPaPQvY3nkxM2unaDdE8jiY)
+
+### Set Address Page
+![Sample Image](https://drive.google.com/uc?export=view&id=1TymExcDNZ7yV46iMVUUVCQQKKA95KTvF)
